@@ -1,0 +1,38 @@
+{
+  "author": {
+    "nameTa": "நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்",
+    "nameEn": "Neelam P.J. Pradeep Jesudas",
+    "youtube": "https://www.youtube.com/@Jesusisthetrueway.Thelight"
+  },
+  "books": [
+    {
+      "slug": "uppu-petti",
+      "titleTa": "உப்புப் பெட்டி",
+      "titleEn": "The Salt Box",
+      "year": 2026,
+      "pages": 624,
+      "format": "A5",
+      "languages": ["ta", "en"],
+      "cover": "/books/uppu-petti/cover.jpg",
+      "pdf": "/books/uppu-petti/uppu-petti.pdf",
+      "video": "/books/uppu-petti/video.mp4",
+      "page": "/books/uppu-petti/",
+      "fullAudiobook": "https://github.com/prateepjehovah-creator/prateepjehovah-creator.github.io/releases/download/uppu-petti-audiobook/Uppu-Petti-Tamil-audiobook.mp3",
+      "audioNote": "Tamil readings of Part One, chapters 1–12. The English text is in the PDF.",
+      "chapters": [
+        {"file": "audio/ch01.mp3", "ta": "ஆச்சியின் இரவுகள்", "en": "Grandmother's Nights"},
+        {"file": "audio/ch02.mp3", "ta": "அப்பாவின் மனுக்கள்", "en": "Appa's Petitions"},
+        {"file": "audio/ch03.mp3", "ta": "கிரீஸ் படிந்த கைகள்", "en": "Hands Stained with Grease"},
+        {"file": "audio/ch04.mp3", "ta": "பெட்ரோலும் சாம்பலும்", "en": "Petrol and Ash"},
+        {"file": "audio/ch05.mp3", "ta": "இரத்தம் படிந்த தெரு", "en": "The Street of Blood"},
+        {"file": "audio/ch06.mp3", "ta": "மாடியில் ஒரு வேலைக்காரன்", "en": "A Servant on the Terrace"},
+        {"file": "audio/ch07.mp3", "ta": "சித்தப்பாவின் சபை", "en": "The Uncle's Church"},
+        {"file": "audio/ch08.mp3", "ta": "சாலேம்", "en": "Salem"},
+        {"file": "audio/ch09.mp3", "ta": "விக்டோரியா டெர்மினஸ்", "en": "Victoria Terminus"},
+        {"file": "audio/ch10.mp3", "ta": "ஜூஹு வரை நடை", "en": "The Walk to Juhu"},
+        {"file": "audio/ch11.mp3", "ta": "தோலின் மேல் எழுதப்பட்ட கடிதம்", "en": "A Letter Written on Skin"},
+        {"file": "audio/ch12.mp3", "ta": "மசாலாவும் நீலமும்", "en": "Masala and Neelam"}
+      ]
+    }
+  ]
+}

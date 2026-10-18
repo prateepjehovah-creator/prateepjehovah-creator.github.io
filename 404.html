@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ta" data-lang="ta">
+<head>
+  <meta charset="utf-8">
+  <script>
+    try {
+      var savedLang = localStorage.getItem("lang");
+      if (savedLang === "en" || savedLang === "ta") {
+        document.documentElement.setAttribute("data-lang", savedLang);
+        document.documentElement.lang = savedLang;
+      }
+    } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>பக்கம் இல்லை · Page not found</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#12224a">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">நீலம் <small lang="en">Neelam</small></a>
+    <div class="lang-switch" role="group" aria-label="மொழி / Language">
+      <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+  <main id="main" class="hero">
+    <div class="wrap">
+      <p class="kicker">404</p>
+      <h1 class="name-stack">
+        <span class="ta-name" lang="ta">இந்தப் பக்கம் இல்லை</span>
+        <span class="en-name" lang="en">This page is not here</span>
+      </h1>
+      <hr class="rule">
+      <p><a class="button" href="/">
+        <span class="only-ta" lang="ta">முகப்புக்குத் திரும்பு</span>
+        <span class="only-en" lang="en">Back to the home page</span>
+      </a></p>
+    </div>
+  </main>
+  <script src="/js/site.js"></script>
+</body>
+</html>
