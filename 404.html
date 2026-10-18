@@ -9,24 +9,50 @@
         document.documentElement.setAttribute("data-lang", savedLang);
         document.documentElement.lang = savedLang;
       }
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>பக்கம் இல்லை · Page not found</title>
+  <title data-title-both="பக்கம் இல்லை · Page not found" data-title-ta="பக்கம் இல்லை" data-title-en="Page not found">பக்கம் இல்லை · Page not found</title>
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#12224a">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="alternate" type="application/rss+xml" title="Neelam P.J. Pradeep Jesudas" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">நீலம் <small lang="en">Neelam</small></a>
-    <div class="lang-switch" role="group" aria-label="மொழி / Language">
-      <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    <header class="site-header">
+    <a class="brand" href="/">
+      <span class="only-ta" lang="ta">நீலம்</span>
+      <span class="only-en" lang="en">Neelam</span>
+    </a>
+    <div class="header-tools">
+      <a class="nav-link" href="/about/">
+        <span class="only-ta" lang="ta">பற்றி</span>
+        <span class="only-en" lang="en">About</span>
+      </a>
+      <a class="nav-link" href="/contact/">
+        <span class="only-ta" lang="ta">தொடர்பு</span>
+        <span class="only-en" lang="en">Contact</span>
+      </a>
+      <button type="button" class="theme-btn" data-theme-toggle aria-pressed="false">
+        <span class="only-ta" lang="ta">நிறம்</span>
+        <span class="only-en" lang="en">Theme</span>
+      </button>
+      <div class="lang-switch" role="group" aria-label="மொழி / Language">
+        <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
     </div>
   </header>
   <main id="main" class="hero">
@@ -43,6 +69,40 @@
       </a></p>
     </div>
   </main>
+    <footer class="site-footer">
+    <div class="wrap">
+      <p class="identity">
+        <span class="only-ta" lang="ta">🔵 நீலக்குரல் — உரிமை இழந்த மக்களுக்கான பத்திரிகை. ஆசிரியர்: ஒடுக்கப்பட்டோர் குரல், சமூகநீதி எழுத்தாளர், மனித உரிமைச் செயற்பாட்டாளர் நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th., தூத்துக்குடி</span>
+        <span class="only-en" lang="en">Neelakkural — a journal for people denied their rights. Editor: voice of the oppressed, social-justice writer and human-rights activist Neelam P.J. Pradeep Jesudas, B.Th., Thoothukudi.</span>
+      </p>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">
+          <span class="only-ta" lang="ta">தொடர்பு</span>
+          <span class="only-en" lang="en">Contact</span>
+        </h2>
+        <p>
+          <a data-email-link href="/contact/">
+            <span class="only-ta" lang="ta">மின்னஞ்சல்</span>
+            <span class="only-en" lang="en">Email</span>
+          </a>
+        </p>
+        <noscript><p>prateepjehovah [at] gmail [dot] com</p></noscript>
+        <p>
+          <span class="only-ta" lang="ta">தூத்துக்குடி, தமிழ்நாடு, இந்தியா</span>
+          <span class="only-en" lang="en">Thoothukudi, Tamil Nadu, India</span>
+        </p>
+      </section>
+      <p class="footer-links">
+        <a href="/about/"><span class="only-ta" lang="ta">பற்றி</span><span class="only-en" lang="en">About</span></a>
+        <a href="/contact/"><span class="only-ta" lang="ta">தொடர்புப் படிவம்</span><span class="only-en" lang="en">Contact form</span></a>
+        <a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
+        <a href="/feed.xml">RSS</a>
+      </p>
+      <p class="only-ta" lang="ta">இந்தத் தளத்தில் உள்ள நூல்களை இலவசமாகப் படிக்க, பார்க்க, கேட்க, பதிவிறக்கலாம்.</p>
+      <p class="only-en" lang="en">The books on this site may be read, watched, listened to, and downloaded free of charge.</p>
+      <p class="fine">© 2026 Neelam P.J. Pradeep Jesudas · தூத்துக்குடி</p>
+    </div>
+  </footer>
   <script src="/js/site.js"></script>
 </body>
 </html>

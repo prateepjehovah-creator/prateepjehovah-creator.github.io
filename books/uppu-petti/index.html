@@ -9,21 +9,26 @@
         document.documentElement.setAttribute("data-lang", savedLang);
         document.documentElement.lang = savedLang;
       }
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>உப்புப் பெட்டி · The Salt Box — நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</title>
-  <meta name="description" content="உப்புப் பெட்டி / The Salt Box. தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பத்தை அடிப்படையாகக் கொண்ட இருமொழி நாவல். PDF, காணொளி, தமிழ்க் கேட்பொலி — இலவசப் பதிவிறக்கம். A bilingual novel by Neelam P.J. Pradeep Jesudas. Free PDF, video, and Tamil audiobook.">
+  <title data-title-both="உப்புப் பெட்டி · The Salt Box" data-title-ta="உப்புப் பெட்டி" data-title-en="The Salt Box">உப்புப் பெட்டி · The Salt Box</title>
+  <meta name="description" content="ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம். A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book." data-desc-both="ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம். A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book." data-desc-ta="ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம்." data-desc-en="A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book.">
   <meta name="author" content="Neelam P.J. Pradeep Jesudas">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#12224a">
+  <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://prateepjehovah-creator.github.io/books/uppu-petti/">
   <meta property="og:type" content="book">
   <meta property="og:locale" content="ta_IN">
   <meta property="og:locale:alternate" content="en_IN">
   <meta property="og:site_name" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்">
   <meta property="og:title" content="உப்புப் பெட்டி · The Salt Box">
-  <meta property="og:description" content="A bilingual Tamil–English novel by Neelam P.J. Pradeep Jesudas. Read, watch, listen, and download free.">
+  <meta property="og:description" content="ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம். A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book.">
   <meta property="og:url" content="https://prateepjehovah-creator.github.io/books/uppu-petti/">
   <meta property="og:image" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
   <meta property="og:image:secure_url" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
@@ -33,41 +38,49 @@
   <meta property="og:image:alt" content="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="உப்புப் பெட்டி · The Salt Box">
-  <meta name="twitter:description" content="A bilingual Tamil–English novel by Neelam P.J. Pradeep Jesudas. Free PDF, video, and Tamil audiobook.">
+  <meta name="twitter:description" content="ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம். A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book.">
   <meta name="twitter:image" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
   <meta name="twitter:image:alt" content="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="alternate" type="application/rss+xml" title="Neelam P.J. Pradeep Jesudas" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "name": "The Salt Box",
-    "alternateName": "உப்புப் பெட்டி",
-    "inLanguage": ["ta", "en"],
-    "datePublished": "2026",
-    "numberOfPages": 624,
-    "bookFormat": "https://schema.org/EBook",
-    "url": "https://prateepjehovah-creator.github.io/books/uppu-petti/",
-    "image": "https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg",
-    "author": {
-      "@type": "Person",
-      "name": "Neelam P.J. Pradeep Jesudas",
-      "alternateName": "நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்",
-      "url": "https://prateepjehovah-creator.github.io/"
-    },
-    "encoding": [
-      {
-        "@type": "MediaObject",
-        "contentUrl": "https://prateepjehovah-creator.github.io/books/uppu-petti/uppu-petti.pdf",
-        "encodingFormat": "application/pdf",
-        "name": "உப்புப் பெட்டி / The Salt Box PDF"
-      }
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Salt Box",
+  "alternateName": "உப்புப் பெட்டி",
+  "inLanguage": [
+    "ta",
+    "en"
+  ],
+  "datePublished": "2026",
+  "numberOfPages": 624,
+  "bookFormat": "https://schema.org/EBook",
+  "url": "https://prateepjehovah-creator.github.io/books/uppu-petti/",
+  "image": "https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Neelam P.J. Pradeep Jesudas",
+    "alternateName": "நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்",
+    "url": "https://prateepjehovah-creator.github.io/"
+  },
+  "encoding": [
+    {
+      "@type": "MediaObject",
+      "contentUrl": "https://prateepjehovah-creator.github.io/books/uppu-petti/uppu-petti.pdf",
+      "encodingFormat": "application/pdf",
+      "name": "உப்புப் பெட்டி / The Salt Box PDF"
+    }
+  ],
+  "description": "A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Part One is Tamil. Part Two is the English text of the same book. ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. நூலின் முதல் பாதி தமிழ். இரண்டாம் பாதி அதே நூலின் ஆங்கில வடிவம்."
+}
   </script>
   <noscript>
     <style>
@@ -81,14 +94,28 @@
     <span class="only-ta" lang="ta">உள்ளடக்கத்திற்குச் செல்</span>
     <span class="only-en" lang="en">Skip to content</span>
   </a>
-  <header class="site-header">
+    <header class="site-header">
     <a class="brand" href="/">
-      நீலம்
-      <small lang="en">Neelam</small>
+      <span class="only-ta" lang="ta">நீலம்</span>
+      <span class="only-en" lang="en">Neelam</span>
     </a>
-    <div class="lang-switch" role="group" aria-label="மொழி / Language">
-      <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    <div class="header-tools">
+      <a class="nav-link" href="/about/">
+        <span class="only-ta" lang="ta">பற்றி</span>
+        <span class="only-en" lang="en">About</span>
+      </a>
+      <a class="nav-link" href="/contact/">
+        <span class="only-ta" lang="ta">தொடர்பு</span>
+        <span class="only-en" lang="en">Contact</span>
+      </a>
+      <button type="button" class="theme-btn" data-theme-toggle aria-pressed="false">
+        <span class="only-ta" lang="ta">நிறம்</span>
+        <span class="only-en" lang="en">Theme</span>
+      </button>
+      <div class="lang-switch" role="group" aria-label="மொழி / Language">
+        <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
     </div>
   </header>
 
@@ -103,11 +130,8 @@
           <span class="main-ta" lang="ta">உப்புப் பெட்டி</span>
           <span class="sub" lang="en">The Salt Box</span>
         </h1>
-        <p class="byline">
-          <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-          <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-        </p>
-        <p class="meta">2026 · முதல் பதிப்பு / First edition · 624 பக்கங்கள் / pages · A5</p>
+        <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
+        <p class="meta">2026 · <span class="only-ta" lang="ta">முதல் பதிப்பு</span><span class="only-en" lang="en">First edition</span> · 624 <span class="only-ta" lang="ta">பக்கங்கள்</span><span class="only-en" lang="en">pages</span> · A5</p>
         <nav class="on-page" aria-label="On this page">
           <a href="#read">
             <span class="only-ta" lang="ta">படிக்க</span>
@@ -123,9 +147,26 @@
           </a>
         </nav>
       </header>
+      <div class="share">
+        <p class="share-label">
+          <span class="only-ta" lang="ta">பகிர</span>
+          <span class="only-en" lang="en">Share</span>
+        </p>
+        <div class="share-row">
+          <a href="https://api.whatsapp.com/send?text=%E0%AE%89%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%AA%E0%AF%8D%20%E0%AE%AA%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF%20%C2%B7%20The%20Salt%20Box%20https%3A//prateepjehovah-creator.github.io/books/uppu-petti/" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//prateepjehovah-creator.github.io/books/uppu-petti/" rel="noopener noreferrer" target="_blank">Facebook</a>
+          <a href="https://x.com/intent/tweet?url=https%3A//prateepjehovah-creator.github.io/books/uppu-petti/&amp;text=%E0%AE%89%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%AA%E0%AF%8D%20%E0%AE%AA%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF%20%C2%B7%20The%20Salt%20Box" rel="noopener noreferrer" target="_blank">X</a>
+          <a href="https://t.me/share/url?url=https%3A//prateepjehovah-creator.github.io/books/uppu-petti/&amp;text=%E0%AE%89%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%AA%E0%AF%8D%20%E0%AE%AA%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF%20%C2%B7%20The%20Salt%20Box" rel="noopener noreferrer" target="_blank">Telegram</a>
+          <button type="button" data-copy-link data-url="https://prateepjehovah-creator.github.io/books/uppu-petti/">
+            <span class="only-ta" lang="ta">இணைப்பை நகலெடு</span>
+            <span class="only-en" lang="en">Copy link</span>
+          </button>
+        </div>
+        <p class="copy-status" role="status"></p>
+      </div>
 
       <figure class="plate cover-plate">
-        <img src="/books/uppu-petti/cover.jpg" width="1280" height="720" alt="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+        <img fetchpriority="high" src="/books/uppu-petti/cover.jpg" width="1280" height="720" alt="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover" loading="eager" decoding="async">
       </figure>
 
       <div class="prose">
@@ -150,7 +191,8 @@
             <p>Caste is still alive in this country, and it cannot be overcome without being named. This book is a salt box. On some hungry day, if someone opens it, may they find a pinch of salt: a taste that says you are not alone.</p>
           </div>
           <footer>
-            <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span> · <span lang="en">Neelam P.J. Pradeep Jesudas</span>, தூத்துக்குடி / Thoothukudi, 2026
+            <span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ், தூத்துக்குடி, 2026</span>
+            <span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas, Thoothukudi, 2026</span>
           </footer>
         </blockquote>
       </section>
@@ -168,10 +210,10 @@
           <a class="button" href="/books/uppu-petti/uppu-petti.pdf" download="Uppu-Petti.pdf">
             <span class="only-ta" lang="ta">PDF பதிவிறக்கம்</span>
             <span class="only-en" lang="en">Download the PDF</span>
-          </a>
+          <span class="file-size">12.1 MB</span></a>
           <a class="button-secondary" href="/books/uppu-petti/uppu-petti.pdf" target="_blank" rel="noopener">
-            <span class="only-ta" lang="ta">உலாவியில் திற</span>
-            <span class="only-en" lang="en">Open in the browser</span>
+            <span class="only-ta" lang="ta">இணையத்தில் படிக்க</span>
+            <span class="only-en" lang="en">Read online</span>
           </a>
         </div>
       </section>
@@ -194,7 +236,7 @@
           <a class="download-link" href="/books/uppu-petti/video.mp4" download="Uppu-Petti-video.mp4">
             <span class="only-ta" lang="ta">காணொளிப் பதிவிறக்கம்</span>
             <span class="only-en" lang="en">Download the video</span>
-          </a>
+          <span class="file-size">13.1 MB</span></a>
         </p>
       </section>
 
@@ -217,7 +259,7 @@
             <a class="button" href="https://github.com/prateepjehovah-creator/prateepjehovah-creator.github.io/releases/download/uppu-petti-audiobook/Uppu-Petti-Tamil-audiobook.mp3">
               <span class="only-ta" lang="ta">முழுக் கேட்பொலிப் பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download the full audiobook</span>
-            </a>
+            <span class="file-size">105 MB</span></a>
           </div>
         </div>
 
@@ -241,8 +283,7 @@
             <div class="chapter-head">
               <span class="ch-num">1</span>
               <div>
-                <h3 lang="ta">ஆச்சியின் இரவுகள்</h3>
-                <p class="ch-en" lang="en">Grandmother's Nights</p>
+                <h3><span class="only-ta" lang="ta">ஆச்சியின் இரவுகள்</span><span class="only-en" lang="en">Grandmother's Nights</span></h3>
                 <p class="ch-meta">52:59 · 12.7 MB</p>
               </div>
             </div>
@@ -250,14 +291,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch01.mp3" download="Uppu-Petti-ch01.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">12.7 MB</span></a>
           </li>
           <li class="chapter" id="ch02">
             <div class="chapter-head">
               <span class="ch-num">2</span>
               <div>
-                <h3 lang="ta">அப்பாவின் மனுக்கள்</h3>
-                <p class="ch-en" lang="en">Appa's Petitions</p>
+                <h3><span class="only-ta" lang="ta">அப்பாவின் மனுக்கள்</span><span class="only-en" lang="en">Appa's Petitions</span></h3>
                 <p class="ch-meta">36:24 · 8.7 MB</p>
               </div>
             </div>
@@ -265,14 +305,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch02.mp3" download="Uppu-Petti-ch02.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.7 MB</span></a>
           </li>
           <li class="chapter" id="ch03">
             <div class="chapter-head">
               <span class="ch-num">3</span>
               <div>
-                <h3 lang="ta">கிரீஸ் படிந்த கைகள்</h3>
-                <p class="ch-en" lang="en">Hands Stained with Grease</p>
+                <h3><span class="only-ta" lang="ta">கிரீஸ் படிந்த கைகள்</span><span class="only-en" lang="en">Hands Stained with Grease</span></h3>
                 <p class="ch-meta">38:07 · 9.1 MB</p>
               </div>
             </div>
@@ -280,14 +319,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch03.mp3" download="Uppu-Petti-ch03.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">9.1 MB</span></a>
           </li>
           <li class="chapter" id="ch04">
             <div class="chapter-head">
               <span class="ch-num">4</span>
               <div>
-                <h3 lang="ta">பெட்ரோலும் சாம்பலும்</h3>
-                <p class="ch-en" lang="en">Petrol and Ash</p>
+                <h3><span class="only-ta" lang="ta">பெட்ரோலும் சாம்பலும்</span><span class="only-en" lang="en">Petrol and Ash</span></h3>
                 <p class="ch-meta">36:25 · 8.7 MB</p>
               </div>
             </div>
@@ -295,14 +333,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch04.mp3" download="Uppu-Petti-ch04.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.7 MB</span></a>
           </li>
           <li class="chapter" id="ch05">
             <div class="chapter-head">
               <span class="ch-num">5</span>
               <div>
-                <h3 lang="ta">இரத்தம் படிந்த தெரு</h3>
-                <p class="ch-en" lang="en">The Street of Blood</p>
+                <h3><span class="only-ta" lang="ta">இரத்தம் படிந்த தெரு</span><span class="only-en" lang="en">The Street of Blood</span></h3>
                 <p class="ch-meta">36:05 · 8.7 MB</p>
               </div>
             </div>
@@ -310,14 +347,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch05.mp3" download="Uppu-Petti-ch05.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.7 MB</span></a>
           </li>
           <li class="chapter" id="ch06">
             <div class="chapter-head">
               <span class="ch-num">6</span>
               <div>
-                <h3 lang="ta">மாடியில் ஒரு வேலைக்காரன்</h3>
-                <p class="ch-en" lang="en">A Servant on the Terrace</p>
+                <h3><span class="only-ta" lang="ta">மாடியில் ஒரு வேலைக்காரன்</span><span class="only-en" lang="en">A Servant on the Terrace</span></h3>
                 <p class="ch-meta">35:49 · 8.6 MB</p>
               </div>
             </div>
@@ -325,14 +361,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch06.mp3" download="Uppu-Petti-ch06.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.6 MB</span></a>
           </li>
           <li class="chapter" id="ch07">
             <div class="chapter-head">
               <span class="ch-num">7</span>
               <div>
-                <h3 lang="ta">சித்தப்பாவின் சபை</h3>
-                <p class="ch-en" lang="en">The Uncle's Church</p>
+                <h3><span class="only-ta" lang="ta">சித்தப்பாவின் சபை</span><span class="only-en" lang="en">The Uncle's Church</span></h3>
                 <p class="ch-meta">35:08 · 8.4 MB</p>
               </div>
             </div>
@@ -340,14 +375,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch07.mp3" download="Uppu-Petti-ch07.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.4 MB</span></a>
           </li>
           <li class="chapter" id="ch08">
             <div class="chapter-head">
               <span class="ch-num">8</span>
               <div>
-                <h3 lang="ta">சாலேம்</h3>
-                <p class="ch-en" lang="en">Salem</p>
+                <h3><span class="only-ta" lang="ta">சாலேம்</span><span class="only-en" lang="en">Salem</span></h3>
                 <p class="ch-meta">35:54 · 8.6 MB</p>
               </div>
             </div>
@@ -355,14 +389,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch08.mp3" download="Uppu-Petti-ch08.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.6 MB</span></a>
           </li>
           <li class="chapter" id="ch09">
             <div class="chapter-head">
               <span class="ch-num">9</span>
               <div>
-                <h3 lang="ta">விக்டோரியா டெர்மினஸ்</h3>
-                <p class="ch-en" lang="en">Victoria Terminus</p>
+                <h3><span class="only-ta" lang="ta">விக்டோரியா டெர்மினஸ்</span><span class="only-en" lang="en">Victoria Terminus</span></h3>
                 <p class="ch-meta">36:50 · 8.8 MB</p>
               </div>
             </div>
@@ -370,14 +403,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch09.mp3" download="Uppu-Petti-ch09.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.8 MB</span></a>
           </li>
           <li class="chapter" id="ch10">
             <div class="chapter-head">
               <span class="ch-num">10</span>
               <div>
-                <h3 lang="ta">ஜூஹு வரை நடை</h3>
-                <p class="ch-en" lang="en">The Walk to Juhu</p>
+                <h3><span class="only-ta" lang="ta">ஜூஹு வரை நடை</span><span class="only-en" lang="en">The Walk to Juhu</span></h3>
                 <p class="ch-meta">36:40 · 8.8 MB</p>
               </div>
             </div>
@@ -385,14 +417,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch10.mp3" download="Uppu-Petti-ch10.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">8.8 MB</span></a>
           </li>
           <li class="chapter" id="ch11">
             <div class="chapter-head">
               <span class="ch-num">11</span>
               <div>
-                <h3 lang="ta">தோலின் மேல் எழுதப்பட்ட கடிதம்</h3>
-                <p class="ch-en" lang="en">A Letter Written on Skin</p>
+                <h3><span class="only-ta" lang="ta">தோலின் மேல் எழுதப்பட்ட கடிதம்</span><span class="only-en" lang="en">A Letter Written on Skin</span></h3>
                 <p class="ch-meta">37:38 · 9.0 MB</p>
               </div>
             </div>
@@ -400,14 +431,13 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch11.mp3" download="Uppu-Petti-ch11.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">9.0 MB</span></a>
           </li>
           <li class="chapter" id="ch12">
             <div class="chapter-head">
               <span class="ch-num">12</span>
               <div>
-                <h3 lang="ta">மசாலாவும் நீலமும்</h3>
-                <p class="ch-en" lang="en">Masala and Neelam</p>
+                <h3><span class="only-ta" lang="ta">மசாலாவும் நீலமும்</span><span class="only-en" lang="en">Masala and Neelam</span></h3>
                 <p class="ch-meta">37:32 · 9.0 MB</p>
               </div>
             </div>
@@ -415,20 +445,78 @@
             <a class="download-link" href="/books/uppu-petti/audio/ch12.mp3" download="Uppu-Petti-ch12.mp3">
               <span class="only-ta" lang="ta">பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download</span>
-            </a>
+            <span class="file-size">9.0 MB</span></a>
           </li>
         </ol>
+      </section>
+
+      <section class="related" aria-labelledby="related-heading">
+        <h2 id="related-heading">
+          <span class="only-ta" lang="ta">பிற நூல்கள்</span>
+          <span class="only-en" lang="en">Other books</span>
+        </h2>
+        <ul class="related-list">
+        <li>
+          <a href="/books/adiyogi/">
+            <img src="/books/adiyogi/cover.jpg" width="600" height="850" alt="ஆதியோகியும் ஆதி மனிதனும்: கைலாயத்திலிருந்து கல்வாரி வரை / Adiyogi and the First Man: From Kailash to Calvary — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">ஆதியோகியும் ஆதி மனிதனும்: கைலாயத்திலிருந்து கல்வாரி வரை</span>
+              <span class="en" lang="en">Adiyogi and the First Man: From Kailash to Calvary</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/books/bible-to-quran/">
+            <img src="/books/bible-to-quran/cover.jpg" width="600" height="850" alt="திருவிவிலியத்திலிருந்து திருக்குர்ஆன்: ஆதி ஒளியின் நிழலில் ஒரு வரலாற்று ஆய்வு / From the Holy Bible to the Holy Quran: A Historical Inquiry in the Shadow of the Original Light — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">திருவிவிலியத்திலிருந்து திருக்குர்ஆன்: ஆதி ஒளியின் நிழலில் ஒரு வரலாற்று ஆய்வு</span>
+              <span class="en" lang="en">From the Holy Bible to the Holy Quran: A Historical Inquiry in the Shadow of the Original Light</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/books/peniel/">
+            <img src="/books/peniel/cover.jpg" width="600" height="900" alt="பெனியேல்: ஒற்றைக்கண்ணின் விவிலிய நரம்பியல் ரகசியம் / Peniel: The Biblical Neurological Secret of the Single Eye — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">பெனியேல்: ஒற்றைக்கண்ணின் விவிலிய நரம்பியல் ரகசியம்</span>
+              <span class="en" lang="en">Peniel: The Biblical Neurological Secret of the Single Eye</span>
+            </span>
+          </a>
+        </li>
+        </ul>
       </section>
     </div>
   </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap">
       <p class="identity">
         <span class="only-ta" lang="ta">🔵 நீலக்குரல் — உரிமை இழந்த மக்களுக்கான பத்திரிகை. ஆசிரியர்: ஒடுக்கப்பட்டோர் குரல், சமூகநீதி எழுத்தாளர், மனித உரிமைச் செயற்பாட்டாளர் நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th., தூத்துக்குடி</span>
         <span class="only-en" lang="en">Neelakkural — a journal for people denied their rights. Editor: voice of the oppressed, social-justice writer and human-rights activist Neelam P.J. Pradeep Jesudas, B.Th., Thoothukudi.</span>
       </p>
-      <p><a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a></p>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">
+          <span class="only-ta" lang="ta">தொடர்பு</span>
+          <span class="only-en" lang="en">Contact</span>
+        </h2>
+        <p>
+          <a data-email-link href="/contact/">
+            <span class="only-ta" lang="ta">மின்னஞ்சல்</span>
+            <span class="only-en" lang="en">Email</span>
+          </a>
+        </p>
+        <noscript><p>prateepjehovah [at] gmail [dot] com</p></noscript>
+        <p>
+          <span class="only-ta" lang="ta">தூத்துக்குடி, தமிழ்நாடு, இந்தியா</span>
+          <span class="only-en" lang="en">Thoothukudi, Tamil Nadu, India</span>
+        </p>
+      </section>
+      <p class="footer-links">
+        <a href="/about/"><span class="only-ta" lang="ta">பற்றி</span><span class="only-en" lang="en">About</span></a>
+        <a href="/contact/"><span class="only-ta" lang="ta">தொடர்புப் படிவம்</span><span class="only-en" lang="en">Contact form</span></a>
+        <a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
+        <a href="/feed.xml">RSS</a>
+      </p>
       <p class="only-ta" lang="ta">இந்தத் தளத்தில் உள்ள நூல்களை இலவசமாகப் படிக்க, பார்க்க, கேட்க, பதிவிறக்கலாம்.</p>
       <p class="only-en" lang="en">The books on this site may be read, watched, listened to, and downloaded free of charge.</p>
       <p class="fine">© 2026 Neelam P.J. Pradeep Jesudas · தூத்துக்குடி</p>

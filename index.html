@@ -9,22 +9,28 @@
         document.documentElement.setAttribute("data-lang", savedLang);
         document.documentElement.lang = savedLang;
       }
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் · Neelam P.J. Pradeep Jesudas</title>
-  <meta name="description" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க. Books and translations, free to read, watch, and download.">
+  <title data-title-both="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் · Neelam P.J. Pradeep Jesudas" data-title-ta="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்" data-title-en="Neelam P.J. Pradeep Jesudas">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் · Neelam P.J. Pradeep Jesudas</title>
+  <meta name="description" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க. Neelam P.J. Pradeep Jesudas, writer, activist and social worker from Thoothukudi. Books and translations, free to read, watch, and download." data-desc-both="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க. Neelam P.J. Pradeep Jesudas, writer, activist and social worker from Thoothukudi. Books and translations, free to read, watch, and download." data-desc-ta="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க." data-desc-en="Neelam P.J. Pradeep Jesudas, writer, activist and social worker from Thoothukudi. Books and translations, free to read, watch, and download.">
   <meta name="author" content="Neelam P.J. Pradeep Jesudas">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#12224a">
+  <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-title" content="நீலம்">
   <link rel="canonical" href="https://prateepjehovah-creator.github.io/">
+  <link rel="preload" as="image" href="/books/uppu-petti/cover.jpg" fetchpriority="high">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ta_IN">
   <meta property="og:locale:alternate" content="en_IN">
   <meta property="og:site_name" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்">
   <meta property="og:title" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் · Neelam P.J. Pradeep Jesudas">
-  <meta property="og:description" content="தூத்துக்குடி எழுத்தாளரின் நூல்கள் இலவசம். உப்புப் பெட்டி / The Salt Box — read, watch, listen, and download.">
+  <meta property="og:description" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க. Neelam P.J. Pradeep Jesudas, writer, activist and social worker from Thoothukudi. Books and translations, free to read, watch, and download.">
   <meta property="og:url" content="https://prateepjehovah-creator.github.io/">
   <meta property="og:image" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
   <meta property="og:image:secure_url" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
@@ -34,13 +40,17 @@
   <meta property="og:image:alt" content="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் · Neelam P.J. Pradeep Jesudas">
-  <meta name="twitter:description" content="உப்புப் பெட்டி / The Salt Box — read, watch, listen, and download free.">
+  <meta name="twitter:description" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ் — தூத்துக்குடி எழுத்தாளர், சமூகப் போராளி, சமூக சேவகர். நூல்களும் மொழிபெயர்ப்புகளும் இலவசம்: படிக்க, பார்க்க, பதிவிறக்க. Neelam P.J. Pradeep Jesudas, writer, activist and social worker from Thoothukudi. Books and translations, free to read, watch, and download.">
   <meta name="twitter:image" content="https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg">
   <meta name="twitter:image:alt" content="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="alternate" type="application/rss+xml" title="Neelam P.J. Pradeep Jesudas" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
   {
@@ -48,6 +58,7 @@
     "@type": "Person",
     "name": "Neelam P.J. Pradeep Jesudas",
     "alternateName": "நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்",
+    "email": "prateepjehovah@gmail.com",
     "jobTitle": "Writer, activist and social worker",
     "url": "https://prateepjehovah-creator.github.io/",
     "image": "https://prateepjehovah-creator.github.io/books/uppu-petti/cover.jpg",
@@ -76,14 +87,28 @@
     <span class="only-ta" lang="ta">உள்ளடக்கத்திற்குச் செல்</span>
     <span class="only-en" lang="en">Skip to content</span>
   </a>
-  <header class="site-header">
+    <header class="site-header">
     <a class="brand" href="/">
-      நீலம்
-      <small lang="en">Neelam</small>
+      <span class="only-ta" lang="ta">நீலம்</span>
+      <span class="only-en" lang="en">Neelam</span>
     </a>
-    <div class="lang-switch" role="group" aria-label="மொழி / Language">
-      <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    <div class="header-tools">
+      <a class="nav-link" href="/about/">
+        <span class="only-ta" lang="ta">பற்றி</span>
+        <span class="only-en" lang="en">About</span>
+      </a>
+      <a class="nav-link" href="/contact/">
+        <span class="only-ta" lang="ta">தொடர்பு</span>
+        <span class="only-en" lang="en">Contact</span>
+      </a>
+      <button type="button" class="theme-btn" data-theme-toggle aria-pressed="false">
+        <span class="only-ta" lang="ta">நிறம்</span>
+        <span class="only-en" lang="en">Theme</span>
+      </button>
+      <div class="lang-switch" role="group" aria-label="மொழி / Language">
+        <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
     </div>
   </header>
 
@@ -112,11 +137,43 @@
           <p class="only-en" lang="en">Neelam P.J. Pradeep Jesudas is a writer, activist and social worker from Thoothukudi, Tamil Nadu. He holds a Bachelor of Theology (B.Th). He grew up on the Boltonpuram street, among the salt pans and the sea. He continues to write for his street and for people denied their rights.</p>
         </div>
         <p class="quiet-links">
+          <a href="/about/"><span class="only-ta" lang="ta">பற்றி</span><span class="only-en" lang="en">About</span></a>
+          <a href="/contact/"><span class="only-ta" lang="ta">தொடர்பு</span><span class="only-en" lang="en">Contact</span></a>
           <a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
         </p>
       </div>
     </section>
 
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="wrap-wide">
+        <article class="featured-card">
+          <figure class="plate">
+            <a href="/books/uppu-petti/">
+              <img src="/books/uppu-petti/cover.jpg" width="1280" height="720" alt="உப்புப் பெட்டி / The Salt Box — அட்டைப்படம் / book cover" fetchpriority="high" loading="eager" decoding="async">
+            </a>
+          </figure>
+          <div class="featured-copy">
+            <p class="kicker">
+              <span class="only-ta" lang="ta">சிறப்பு நூல்</span>
+              <span class="only-en" lang="en">Featured book</span>
+            </p>
+            <h2 id="featured-title" class="page-title">
+              <span class="main-ta" lang="ta">உப்புப் பெட்டி</span>
+              <span class="sub" lang="en">The Salt Box</span>
+            </h2>
+            <p class="only-ta" lang="ta">ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. முதலில் தமிழ், பின்னர் ஆங்கிலம்.</p>
+            <p class="only-en" lang="en">A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Tamil Part One is followed by English Part Two.</p>
+            <div class="actions">
+              <a class="button" href="/books/uppu-petti/">
+                <span class="only-ta" lang="ta">நூலைத் திற</span>
+                <span class="only-en" lang="en">Open the book</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     <section class="band" id="books">
       <div class="wrap-wide">
         <header class="section-head">
@@ -134,6 +191,18 @@
           </p>
         </header>
         
+
+        <form class="library-search" role="search" action="#books">
+          <label for="book-search">
+            <span class="only-ta" lang="ta">நூல்களைத் தேடு</span>
+            <span class="only-en" lang="en">Search books</span>
+          </label>
+          <input id="book-search" name="q" type="search" autocomplete="off">
+        </form>
+        <p id="search-empty" class="search-empty" hidden>
+          <span class="only-ta" lang="ta">பொருந்தும் நூல் இல்லை.</span>
+          <span class="only-en" lang="en">No book matches.</span>
+        </p>
       <div class="shelf" id="my-books">
         <h2 class="shelf-title">
           <span class="ta" lang="ta">என் நூல்கள்</span>
@@ -154,10 +223,7 @@
                 <span class="en" lang="en">The Salt Box</span>
               </a>
             </h3>
-            <p class="byline">
-              <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-              <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-            </p>
+            <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
             <p class="meta">2026</p>
             <p class="only-ta" lang="ta">ஆசிரியர் வாழ்க்கையை அடிப்படையாகக் கொண்ட இருமொழி நாவல் — தூத்துக்குடியில் ஒரு பட்டியல் சாதிக் குடும்பம். சில காட்சிகள் கற்பனை செய்யப்பட்டவை; சில பெயர்கள் மாற்றப்பட்டுள்ளன. முதலில் தமிழ், பின்னர் ஆங்கிலம்.</p>
             <p class="only-en" lang="en">A bilingual Tamil and English novel based on the author’s life: a Scheduled Caste family in Thoothukudi. Some scenes are imagined, and some names have been changed. Tamil Part One is followed by English Part Two.</p>
@@ -188,10 +254,7 @@
               </a>
             </h3>
             
-            <p class="byline">
-              <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-              <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-            </p>
+            <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
             <p class="meta">2026</p>
             <p class="only-ta" lang="ta">கைலாயம், கல்வாரி என்ற இரண்டு மலைகள்; ஒரே தேடல். மனித வாழ்வின் தொடக்கம், மனித இயல்பு, வீழ்ச்சி அல்லது மறதி பற்றிச் சைவ மரபும் விவிலியமும் சொல்வதை மரியாதையுடன் ஒப்பிடும் ஆன்மீக ஆய்வு நூல். &quot;சிவனே ஆதாம்&quot; என்று இந்நூல் சொல்லவில்லை.</p>
             <p class="only-en" lang="en">Two mountains, one search: a respectful comparative study of what the Shaiva tradition and the Bible say about the beginning of human life, human nature and its fall or forgetting. It does not claim that Shiva is Adam.</p>
@@ -221,10 +284,7 @@
               </a>
             </h3>
             
-            <p class="byline">
-              <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-              <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-            </p>
+            <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
             <p class="meta">2026</p>
             <p class="only-ta" lang="ta">ஆபிரகாமிய மரபுகளின் வேர்களைத் தோண்டிப் பார்த்தால், முரண்பாடுகளைவிட வியக்கத்தக்க ஒற்றுமைகளே அதிகம் என்பதைக் காட்டும் வரலாறு மற்றும் ஆன்மீக ஆய்வு நூல்.</p>
             <p class="only-en" lang="en">A study in history and spirituality showing that, dug to their roots, the Abrahamic faiths hold far more astonishing agreement than contradiction.</p>
@@ -254,10 +314,7 @@
               </a>
             </h3>
             
-            <p class="byline">
-              <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-              <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-            </p>
+            <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
             <p class="meta">2026</p>
             <p class="only-ta" lang="ta">மூளையின் நடுவே பட்டாணி அளவில் இருக்கும் பீனியல் சுரப்பியை &quot;ஒற்றைக் கண்&quot; என்று விவிலியப் பார்வையில் விளக்கி, மனித உடலை ஒரு தூய ஆலயமாகக் காட்டும் நூல்.</p>
             <p class="only-en" lang="en">A book that reads the pea-sized pineal gland at the centre of the brain as the &#x27;single eye&#x27; of the Bible, presenting the human body as a sublime temple.</p>
@@ -287,10 +344,7 @@
               </a>
             </h3>
             
-            <p class="byline">
-              <span lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><br>
-              <span lang="en">Neelam P.J. Pradeep Jesudas</span>
-            </p>
+            <p class="byline"><span class="only-ta" lang="ta">நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்</span><span class="only-en" lang="en">Neelam P.J. Pradeep Jesudas</span></p>
             <p class="meta">2026</p>
             <p class="only-ta" lang="ta">மனித உடல் ஒரே இயந்திரம்; அதற்குள் இரண்டு வகை உழைப்பு. உள்ளே ஓய்வில்லாமல் உழைக்கும் உறுப்புகளையும் வெளியே உழைக்கும் கைகால்களையும் அறிவியல், விவிலியம், யோகம் என்ற மூன்று பார்வைகளில் காட்டும் நூல். (மருத்துவ ஆலோசனை அல்ல.)</p>
             <p class="only-en" lang="en">One body, two kinds of work, three ways of seeing: the organs that labour without rest inside us and the hands that labour outside, viewed through science, the Bible and yoga. Not medical advice.</p>
@@ -330,8 +384,8 @@
               </a>
             </h3>
             
-            <p class="byline">Anselmo Suárez y Romero (அன்செல்மோ சுவாரெஸ் இ ரொமேரோ, 1818–1878)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Anselmo Suárez y Romero, 1818–1878</span><span class="only-ta" lang="ta">அன்செல்மோ சுவாரெஸ் இ ரொமேரோ, 1818–1878</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1838–1839 (written); 1880 (first published, New York)</p>
             <p class="only-ta" lang="ta">அடிமைமுறை நிலவிய கியூபாவில் அச்சேற முடியாத நாவல். செல்வச் சீமாட்டியின் வீட்டு அடிமைகளான பிரான்சிஸ்கோவும் தொரொதேயாவும் ஒருவரையொருவர் நேசித்து, திருமணம் செய்ய எஜமானியின் அனுமதி கேட்பதிலிருந்து தொடங்கும் துயரக் கதை.</p>
             <p class="only-en" lang="en">A novel that could not be printed in Cuba while slavery lasted: the story of Francisco and Dorotea, two household slaves who love each other and ask their mistress for permission to marry.</p>
@@ -361,8 +415,8 @@
               </a>
             </h3>
             
-            <p class="byline">Gil Seon-ju (கில் சொன்-ஜு, 1869–1935)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Gil Seon-ju, 1869–1935</span><span class="only-ta" lang="ta">கில் சொன்-ஜு, 1869–1935</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1904 (Seoul)</p>
             <p class="only-ta" lang="ta">கொரியக் கிறிஸ்தவர் ஒருவர் தாமே எழுதிய தொடக்க கால நூல்களுள் ஒன்றான சிறு உருவகக் கதை. மனித வாழ்வை &quot;விழைவு நகரிலிருந்து&quot; &quot;நிறைவேற்ற நாட்டுக்குச்&quot; செல்லும் பயணமாகச் சித்திரிக்கிறது. கொரிய மூலத்திலிருந்து நேரடியான தமிழாக்கம்.</p>
             <p class="only-en" lang="en">A short allegory, one of the earliest books written by a Korean Christian himself, picturing human life as a journey from the &#x27;City of Desire&#x27; to the &#x27;Land of Fulfilment&#x27;. Translated directly from the Korean.</p>
@@ -391,8 +445,8 @@
               </a>
             </h3>
             
-            <p class="byline">Shimazaki Tōson (தோசன் ஷிமாசாகி, 1872–1943)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Shimazaki Tōson, 1872–1943</span><span class="only-ta" lang="ta">தோசன் ஷிமாசாகி, 1872–1943</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1906</p>
             <p class="only-ta" lang="ta">&quot;எத்தா&quot; என்று இழிவுபடுத்தப்பட்ட, பிறப்பின் அடிப்படையில் ஒதுக்கப்பட்ட சமூகத்தில் பிறந்த பள்ளி ஆசிரியர் உஷிமாட்சு, &quot;நீ யார் என்பதை ஒருபோதும் வெளிப்படுத்தாதே&quot; என்ற தந்தையின் கட்டளையைக் காப்பதா மீறுவதா என்று போராடும் ஜப்பானிய நாவல் (1906). ஜப்பானிய மூலத்திலிருந்து நேரடியான, சுருக்கப்படாத தமிழாக்கம்.</p>
             <p class="only-en" lang="en">A Japanese novel (1906): Ushimatsu, a schoolteacher born into the outcaste &#x27;eta&#x27; community, struggles over whether to keep or break his father&#x27;s command never to reveal who he is. Translated in full directly from the Japanese.</p>
@@ -422,8 +476,8 @@
               </a>
             </h3>
             
-            <p class="byline">Pandit K. P. Karuppan (பண்டிட் கே.பி. கருப்பன், 1885–1938)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Pandit K. P. Karuppan, 1885–1938</span><span class="only-ta" lang="ta">பண்டிட் கே.பி. கருப்பன், 1885–1938</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">c. 1904–05 (written); first printed 1911/1912</p>
             <p class="only-ta" lang="ta">மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம்.</p>
             <p class="only-en" lang="en">An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.</p>
@@ -452,8 +506,8 @@
               </a>
             </h3>
             
-            <p class="byline">Bartolomé de las Casas (பர்த்தலோமே தே லாஸ் காசாஸ், 1484–1566)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Bartolomé de las Casas, 1484–1566</span><span class="only-ta" lang="ta">பர்த்தலோமே தே லாஸ் காசாஸ், 1484–1566</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1542 (written); 1552 (printed, Seville)</p>
             <p class="only-ta" lang="ta">1542-இல் ஸ்பெயின் அரசவையில், நாற்பது ஆண்டுகளாகத் தன் கண்ணால் கண்ட கொடுமைகளைச் சாட்சியமாக முன்வைத்த ஒரு கத்தோலிக்கத் துறவியின் நூல்: அமெரிக்கப் பூர்வகுடி மக்கள் மீது நிகழ்ந்த கொடுமைகளின் கண்கண்ட சாட்சியம்; ஒரு கிறிஸ்தவன் தன் சொந்தச் சமூகத்தின் பாவத்தை எதிர்த்து எழுப்பிய குரல்.</p>
             <p class="only-en" lang="en">In 1542 a Catholic friar stood before the Spanish court with forty years of eyewitness testimony: an account of the atrocities against the native peoples of the Americas, and a Christian&#x27;s protest against the sins of his own people.</p>
@@ -483,8 +537,8 @@
               </a>
             </h3>
             
-            <p class="byline">Muḥammad Ḥāfiẓ Ibrāhīm (முஹம்மது ஹாஃபிஸ் இப்ராஹீம், 1872–1932)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Muḥammad Ḥāfiẓ Ibrāhīm, 1872–1932</span><span class="only-ta" lang="ta">முஹம்மது ஹாஃபிஸ் இப்ராஹீம், 1872–1932</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1906 (Cairo)</p>
             <p class="only-ta" lang="ta">&#x27;நைலின் கவிஞர்&#x27; ஹாஃபிஸ் இப்ராஹீமின் ஒரே முழு உரைநடை நூல். நைல் கரையில் இரவுதோறும் துயருற்ற தோழர்கள் தம் குறைகளைச் சொல்ல, பழங்கதைகளின் குறிசொல்லி சதீஹின் மறைந்த குரல் பதில் சொல்கிறது.</p>
             <p class="only-en" lang="en">The only complete prose work of Egypt&#x27;s &#x27;Poet of the Nile&#x27;: on successive nights by the Nile, companions tell their sorrows and the hidden voice of the legendary soothsayer Satih answers them.</p>
@@ -514,8 +568,8 @@
               </a>
             </h3>
             
-            <p class="byline">Vladimir Korolenko (விளதீமிர் கொரலென்கோ, 1853–1921)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Vladimir Korolenko, 1853–1921</span><span class="only-ta" lang="ta">விளதீமிர் கொரலென்கோ, 1853–1921</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1895–1913</p>
             <p class="only-ta" lang="ta">1892-இல் ருஷ்யப் பேரரசின் ஸ்தாரி முல்தான் கிராமத்தின் வோத்யாக் (உத்மூர்த்) விவசாயிகள் மீது நரபலிக் குற்றம் சுமத்தப்பட்டது. மூன்றாம் விசாரணையில் எதிர்த்தரப்பில் வாதாடி அவர்களின் விடுதலைக்கு உழைத்த எழுத்தாளர் கொரலென்கோவின் சாட்சியம்.</p>
             <p class="only-en" lang="en">In 1892 Votyak (Udmurt) peasants of Stary Multan in the Russian Empire were accused of human sacrifice. Korolenko&#x27;s testimony as a writer who reported the trials and helped defend them until their acquittal in 1896.</p>
@@ -545,8 +599,8 @@
               </a>
             </h3>
             
-            <p class="byline">A. S. Prugavin (அ. ஸ். ப்ருகாவின், 1850–1920)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">A. S. Prugavin, 1850–1920</span><span class="only-ta" lang="ta">அ. ஸ். ப்ருகாவின், 1850–1920</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1905 (Moscow, Posrednik)</p>
             <p class="only-ta" lang="ta">ருஷ்யாவின் சமயச் சிறுபான்மையினரை மடங்களின் சிறைகளில் அடைத்த கொடுமையைப் பற்றி, மனச்சான்றுச் சுதந்திரத்துக்காகக் குரல் கொடுத்த இனவரைவியலாளர் ப்ருகாவின் எழுதிய மூன்று கட்டுரைகளின் தொகுப்பு. ருஷ்ய மூலத்திலிருந்து நேரடியான தமிழாக்கம்.</p>
             <p class="only-en" lang="en">Three essays by the ethnographer and advocate of freedom of conscience A. S. Prugavin on the imprisonment of Russia&#x27;s religious dissenters in monastery jails, translated directly from the Russian.</p>
@@ -576,8 +630,8 @@
               </a>
             </h3>
             
-            <p class="byline">Walter Rauschenbusch (வால்டர் ரவுஷென்புஷ், 1861–1918)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Walter Rauschenbusch, 1861–1918</span><span class="only-ta" lang="ta">வால்டர் ரவுஷென்புஷ், 1861–1918</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1907</p>
             <p class="only-ta" lang="ta">நியூயார்க்கின் ஏழைத் தொழிலாளர் பகுதியில் போதகராகப் பணியாற்றிய ரவுஷென்புஷ், எபிரேய இறைவாக்கினர், இயேசுவின் போதனை, தொடக்கக் காலத் திருச்சபை ஆகியவற்றின் சமூக உள்ளடக்கத்தை ஆராய்ந்து, தம் காலச் சமூக நெருக்கடிக்கு முன் திருச்சபை செய்ய வேண்டியதை விவாதிக்கும் &#x27;சமூக நற்செய்தி&#x27; நூல். முழு நூலின் தமிழாக்கம்.</p>
             <p class="only-en" lang="en">The classic of the Social Gospel by a pastor of New York&#x27;s poor &#x27;Hell&#x27;s Kitchen&#x27;: the social content of the Hebrew prophets, Jesus and the early church, why it faded, and what the church must do in the social crisis. Complete Tamil translation.</p>
@@ -607,8 +661,8 @@
               </a>
             </h3>
             
-            <p class="byline">Rettaimalai Srinivasan (இரட்டைமலை சீனிவாசன், 1860–1945)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Rettaimalai Srinivasan, 1860–1945</span><span class="only-ta" lang="ta">இரட்டைமலை சீனிவாசன், 1860–1945</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1939 (Madras)</p>
             <p class="only-ta" lang="ta">தென்னிந்திய நவீன தலித் இயக்கத்தின் நிறுவனர்களில் ஒருவரும், &quot;பறையன்&quot; இதழை நிறுவியவரும், வட்டமேசை மாநாடுகளில் அம்பேத்கருடன் ஒடுக்கப்பட்ட வகுப்பினரின் சார்பில் பங்கேற்றவருமான இரட்டைமலை சீனிவாசன் 1939-இல் வெளியிட்ட சுருக்கமான தன்வரலாறு. இதன் ஆங்கில மொழிபெயர்ப்பு.</p>
             <p class="only-en" lang="en">English translation of the short 1939 autobiography of Rettaimalai Srinivasan, a founder of the modern Dalit movement in South India, founder of the journal Paraiyan and Ambedkar&#x27;s colleague at the Round Table Conferences.</p>
@@ -637,8 +691,8 @@
               </a>
             </h3>
             
-            <p class="byline">Ida B. Wells (ஐடா பி. வெல்ஸ், 1862–1931)</p>
-            <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+            <p class="byline"><span class="only-en" lang="en">Ida B. Wells, 1862–1931</span><span class="only-ta" lang="ta">ஐடா பி. வெல்ஸ், 1862–1931</span></p>
+            <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
             <p class="meta">1892</p>
             <p class="only-ta" lang="ta">1892-இல் நண்பர்கள் மூவர் கும்பலால் கொல்லப்பட்டு, அச்சகம் சூறையாடப்பட்ட பிறகும் அஞ்சாமல், பெயர்களையும் தேதிகளையும் ஊர்களையும் பதிவு செய்த ஒரு கறுப்பினப் பெண் பத்திரிகையாளரின் சாட்சியம். அமெரிக்கத் தென் மாநிலங்களில் கறுப்பின மக்கள் மீதான கும்பல் கொலைகள் பற்றிய நூல்.</p>
             <p class="only-en" lang="en">In 1892 a Black woman journalist, whose three friends had been lynched and whose press had been wrecked, recorded names, dates and places: her testimony on mob murders of Black people in the American South.</p>
@@ -660,13 +714,35 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap">
       <p class="identity">
         <span class="only-ta" lang="ta">🔵 நீலக்குரல் — உரிமை இழந்த மக்களுக்கான பத்திரிகை. ஆசிரியர்: ஒடுக்கப்பட்டோர் குரல், சமூகநீதி எழுத்தாளர், மனித உரிமைச் செயற்பாட்டாளர் நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th., தூத்துக்குடி</span>
         <span class="only-en" lang="en">Neelakkural — a journal for people denied their rights. Editor: voice of the oppressed, social-justice writer and human-rights activist Neelam P.J. Pradeep Jesudas, B.Th., Thoothukudi.</span>
       </p>
-      <p><a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a></p>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">
+          <span class="only-ta" lang="ta">தொடர்பு</span>
+          <span class="only-en" lang="en">Contact</span>
+        </h2>
+        <p>
+          <a data-email-link href="/contact/">
+            <span class="only-ta" lang="ta">மின்னஞ்சல்</span>
+            <span class="only-en" lang="en">Email</span>
+          </a>
+        </p>
+        <noscript><p>prateepjehovah [at] gmail [dot] com</p></noscript>
+        <p>
+          <span class="only-ta" lang="ta">தூத்துக்குடி, தமிழ்நாடு, இந்தியா</span>
+          <span class="only-en" lang="en">Thoothukudi, Tamil Nadu, India</span>
+        </p>
+      </section>
+      <p class="footer-links">
+        <a href="/about/"><span class="only-ta" lang="ta">பற்றி</span><span class="only-en" lang="en">About</span></a>
+        <a href="/contact/"><span class="only-ta" lang="ta">தொடர்புப் படிவம்</span><span class="only-en" lang="en">Contact form</span></a>
+        <a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
+        <a href="/feed.xml">RSS</a>
+      </p>
       <p class="only-ta" lang="ta">இந்தத் தளத்தில் உள்ள நூல்களை இலவசமாகப் படிக்க, பார்க்க, கேட்க, பதிவிறக்கலாம்.</p>
       <p class="only-en" lang="en">The books on this site may be read, watched, listened to, and downloaded free of charge.</p>
       <p class="fine">© 2026 Neelam P.J. Pradeep Jesudas · தூத்துக்குடி</p>

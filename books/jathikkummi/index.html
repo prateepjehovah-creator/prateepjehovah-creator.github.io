@@ -9,21 +9,26 @@
         document.documentElement.setAttribute("data-lang", savedLang);
         document.documentElement.lang = savedLang;
       }
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
     } catch (e) {}
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ஜாதிக்கும்மி · Jathikkummi</title>
-  <meta name="description" content="ஜாதிக்கும்மி / Jathikkummi. மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. ...">
+  <title data-title-both="ஜாதிக்கும்மி · Jathikkummi" data-title-ta="ஜாதிக்கும்மி" data-title-en="Jathikkummi">ஜாதிக்கும்மி · Jathikkummi</title>
+  <meta name="description" content="மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம். An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations." data-desc-both="மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம். An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations." data-desc-ta="மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம்." data-desc-en="An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.">
   <meta name="author" content="Pandit K. P. Karuppan (பண்டிட் கே.பி. கருப்பன், 1885–1938)">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#12224a">
+  <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://prateepjehovah-creator.github.io/books/jathikkummi/">
   <meta property="og:type" content="book">
   <meta property="og:locale" content="ta_IN">
   <meta property="og:locale:alternate" content="en_IN">
   <meta property="og:site_name" content="நீலம் பி.ஜே. பிரதீப் ஜேசுதாஸ்">
   <meta property="og:title" content="ஜாதிக்கும்மி · Jathikkummi">
-  <meta property="og:description" content="An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.">
+  <meta property="og:description" content="மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம். An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.">
   <meta property="og:url" content="https://prateepjehovah-creator.github.io/books/jathikkummi/">
   <meta property="og:image" content="https://prateepjehovah-creator.github.io/books/jathikkummi/cover.jpg">
   <meta property="og:image:secure_url" content="https://prateepjehovah-creator.github.io/books/jathikkummi/cover.jpg">
@@ -33,16 +38,20 @@
   <meta property="og:image:alt" content="ஜாதிக்கும்மி / Jathikkummi — அட்டைப்படம் / book cover">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ஜாதிக்கும்மி · Jathikkummi">
-  <meta name="twitter:description" content="An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.">
+  <meta name="twitter:description" content="மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம். An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala&#x27;s distance-pollution cruelties. Malayalam original with Tamil and English translations.">
   <meta name="twitter:image" content="https://prateepjehovah-creator.github.io/books/jathikkummi/cover.jpg">
   <meta name="twitter:image:alt" content="ஜாதிக்கும்மி / Jathikkummi — அட்டைப்படம் / book cover">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="alternate" type="application/rss+xml" title="Neelam P.J. Pradeep Jesudas" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "Book",
   "name": "Jathikkummi",
@@ -55,7 +64,7 @@
   "datePublished": "c. 1904–05 (written); first printed 1911/1912",
   "url": "https://prateepjehovah-creator.github.io/books/jathikkummi/",
   "image": "https://prateepjehovah-creator.github.io/books/jathikkummi/cover.jpg",
-  "description": "An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala's distance-pollution cruelties. Malayalam original with Tamil and English translations.",
+  "description": "An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala's distance-pollution cruelties. Malayalam original with Tamil and English translations. மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம்.",
   "author": {
     "@type": "Person",
     "name": "Pandit K. P. Karuppan (பண்டிட் கே.பி. கருப்பன், 1885–1938)"
@@ -64,7 +73,14 @@
     "@type": "Person",
     "name": "Neelam P.J. Pradeep Jesudas",
     "alternateName": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்"
-  }
+  },
+  "encoding": [
+    {
+      "@type": "MediaObject",
+      "contentUrl": "https://prateepjehovah-creator.github.io/books/jathikkummi/book.pdf",
+      "encodingFormat": "application/pdf"
+    }
+  ]
 }
   </script>
   <noscript>
@@ -80,14 +96,28 @@
     <span class="only-ta" lang="ta">உள்ளடக்கத்திற்குச் செல்</span>
     <span class="only-en" lang="en">Skip to content</span>
   </a>
-  <header class="site-header">
+    <header class="site-header">
     <a class="brand" href="/">
-      நீலம்
-      <small lang="en">Neelam</small>
+      <span class="only-ta" lang="ta">நீலம்</span>
+      <span class="only-en" lang="en">Neelam</span>
     </a>
-    <div class="lang-switch" role="group" aria-label="மொழி / Language">
-      <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    <div class="header-tools">
+      <a class="nav-link" href="/about/">
+        <span class="only-ta" lang="ta">பற்றி</span>
+        <span class="only-en" lang="en">About</span>
+      </a>
+      <a class="nav-link" href="/contact/">
+        <span class="only-ta" lang="ta">தொடர்பு</span>
+        <span class="only-en" lang="en">Contact</span>
+      </a>
+      <button type="button" class="theme-btn" data-theme-toggle aria-pressed="false">
+        <span class="only-ta" lang="ta">நிறம்</span>
+        <span class="only-en" lang="en">Theme</span>
+      </button>
+      <div class="lang-switch" role="group" aria-label="மொழி / Language">
+        <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
     </div>
   </header>
   <main id="main" class="book-layout">
@@ -103,8 +133,8 @@
           <span class="sub" lang="en">Jathikkummi</span>
         </h1>
         
-        <p class="byline">Pandit K. P. Karuppan (பண்டிட் கே.பி. கருப்பன், 1885–1938)</p>
-        <p class="credit">Tamil translation / தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</p>
+        <p class="byline"><span class="only-en" lang="en">Pandit K. P. Karuppan, 1885–1938</span><span class="only-ta" lang="ta">பண்டிட் கே.பி. கருப்பன், 1885–1938</span></p>
+        <p class="credit"><span class="only-en" lang="en">Tamil translation: Neelam P.J. Pradeep Jesudas</span><span class="only-ta" lang="ta">தமிழாக்கம்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</span></p>
         <p class="pd-note">
           <span class="only-ta" lang="ta">மூலம் பொதுவுடைமையில் உள்ளது.</span>
           <span class="only-en" lang="en">The original is in the public domain.</span>
@@ -116,8 +146,25 @@
           <a href="#read"><span class="only-ta" lang="ta">படிக்க</span><span class="only-en" lang="en">Read</span></a>
         </nav>
       </header>
+      <div class="share">
+        <p class="share-label">
+          <span class="only-ta" lang="ta">பகிர</span>
+          <span class="only-en" lang="en">Share</span>
+        </p>
+        <div class="share-row">
+          <a href="https://api.whatsapp.com/send?text=%E0%AE%9C%E0%AE%BE%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%BF%20%C2%B7%20Jathikkummi%20https%3A//prateepjehovah-creator.github.io/books/jathikkummi/" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//prateepjehovah-creator.github.io/books/jathikkummi/" rel="noopener noreferrer" target="_blank">Facebook</a>
+          <a href="https://x.com/intent/tweet?url=https%3A//prateepjehovah-creator.github.io/books/jathikkummi/&amp;text=%E0%AE%9C%E0%AE%BE%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%BF%20%C2%B7%20Jathikkummi" rel="noopener noreferrer" target="_blank">X</a>
+          <a href="https://t.me/share/url?url=https%3A//prateepjehovah-creator.github.io/books/jathikkummi/&amp;text=%E0%AE%9C%E0%AE%BE%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AE%BF%20%C2%B7%20Jathikkummi" rel="noopener noreferrer" target="_blank">Telegram</a>
+          <button type="button" data-copy-link data-url="https://prateepjehovah-creator.github.io/books/jathikkummi/">
+            <span class="only-ta" lang="ta">இணைப்பை நகலெடு</span>
+            <span class="only-en" lang="en">Copy link</span>
+          </button>
+        </div>
+        <p class="copy-status" role="status"></p>
+      </div>
       <figure class="plate cover-plate">
-        <img src="/books/jathikkummi/cover.jpg" width="600" height="850" alt="ஜாதிக்கும்மி / Jathikkummi — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+        <img fetchpriority="high" src="/books/jathikkummi/cover.jpg" width="600" height="850" alt="ஜாதிக்கும்மி / Jathikkummi — அட்டைப்படம் / book cover" loading="eager" decoding="async">
       </figure>
       <div class="prose">
         <p class="only-ta" lang="ta">மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம்.</p>
@@ -135,24 +182,82 @@
             <a class="button" href="/books/jathikkummi/book.pdf" download="jathikkummi-book.pdf">
               <span class="only-ta" lang="ta">மலையாளம் · தமிழ் · ஆங்கிலம் — பதிவிறக்கம்</span>
               <span class="only-en" lang="en">Download Malayalam, Tamil and English</span>
-            </a>
+            <span class="file-size">1.1 MB</span></a>
             <a class="button-secondary" href="/books/jathikkummi/book.pdf" target="_blank" rel="noopener">
-              <span class="only-ta" lang="ta">உலாவியில் திற</span>
-              <span class="only-en" lang="en">Open in the browser</span>
+              <span class="only-ta" lang="ta">இணையத்தில் படிக்க</span>
+              <span class="only-en" lang="en">Read online</span>
             </a>
           </div>
         </div>
       </section>
       
+
+      <section class="related" aria-labelledby="related-heading">
+        <h2 id="related-heading">
+          <span class="only-ta" lang="ta">பிற நூல்கள்</span>
+          <span class="only-en" lang="en">Other books</span>
+        </h2>
+        <ul class="related-list">
+        <li>
+          <a href="/books/las-casas-indies/">
+            <img src="/books/las-casas-indies/cover.jpg" width="600" height="850" alt="இண்டீஸ் அழிவின் சுருக்க வரலாறு / A Short Account of the Destruction of the Indies (Brevísima relación de la destrucción de las Indias) — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">இண்டீஸ் அழிவின் சுருக்க வரலாறு</span>
+              <span class="en" lang="en">A Short Account of the Destruction of the Indies (Brevísima relación de la destrucción de las Indias)</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/books/layali-satih/">
+            <img src="/books/layali-satih/cover.jpg" width="600" height="850" alt="சதீஹின் இரவுகள் (அரபு உரைநடை நூல்) / Nights of Satih (Layālī Saṭīḥ) — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">சதீஹின் இரவுகள் (அரபு உரைநடை நூல்)</span>
+              <span class="en" lang="en">Nights of Satih (Layālī Saṭīḥ)</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/books/multan/">
+            <img src="/books/multan/cover.jpg" width="600" height="850" alt="முல்தான் நரபலி வழக்கு / The Multan Sacrifice Case (Мултанское жертвоприношение) — அட்டைப்படம் / book cover" loading="lazy" decoding="async">
+            <span>
+              <span class="ta" lang="ta">முல்தான் நரபலி வழக்கு</span>
+              <span class="en" lang="en">The Multan Sacrifice Case (Мултанское жертвоприношение)</span>
+            </span>
+          </a>
+        </li>
+        </ul>
+      </section>
     </div>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="wrap">
       <p class="identity">
         <span class="only-ta" lang="ta">🔵 நீலக்குரல் — உரிமை இழந்த மக்களுக்கான பத்திரிகை. ஆசிரியர்: ஒடுக்கப்பட்டோர் குரல், சமூகநீதி எழுத்தாளர், மனித உரிமைச் செயற்பாட்டாளர் நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th., தூத்துக்குடி</span>
         <span class="only-en" lang="en">Neelakkural — a journal for people denied their rights. Editor: voice of the oppressed, social-justice writer and human-rights activist Neelam P.J. Pradeep Jesudas, B.Th., Thoothukudi.</span>
       </p>
-      <p><a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a></p>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">
+          <span class="only-ta" lang="ta">தொடர்பு</span>
+          <span class="only-en" lang="en">Contact</span>
+        </h2>
+        <p>
+          <a data-email-link href="/contact/">
+            <span class="only-ta" lang="ta">மின்னஞ்சல்</span>
+            <span class="only-en" lang="en">Email</span>
+          </a>
+        </p>
+        <noscript><p>prateepjehovah [at] gmail [dot] com</p></noscript>
+        <p>
+          <span class="only-ta" lang="ta">தூத்துக்குடி, தமிழ்நாடு, இந்தியா</span>
+          <span class="only-en" lang="en">Thoothukudi, Tamil Nadu, India</span>
+        </p>
+      </section>
+      <p class="footer-links">
+        <a href="/about/"><span class="only-ta" lang="ta">பற்றி</span><span class="only-en" lang="en">About</span></a>
+        <a href="/contact/"><span class="only-ta" lang="ta">தொடர்புப் படிவம்</span><span class="only-en" lang="en">Contact form</span></a>
+        <a href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
+        <a href="/feed.xml">RSS</a>
+      </p>
       <p class="only-ta" lang="ta">இந்தத் தளத்தில் உள்ள நூல்களை இலவசமாகப் படிக்க, பார்க்க, கேட்க, பதிவிறக்கலாம்.</p>
       <p class="only-en" lang="en">The books on this site may be read, watched, listened to, and downloaded free of charge.</p>
       <p class="fine">© 2026 Neelam P.J. Pradeep Jesudas · தூத்துக்குடி</p>
