@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்</string>
+    <string name="launcherName">நீலக்குரல்</string>
+    <string name="launchUrl">https://prateepjehovah-creator.github.io/</string>
+    <string name="hostName">prateepjehovah-creator.github.io</string>
+    <string name="providerAuthority">io.github.prateepjehovah_creator.neelam.fileprovider</string>
+    <string name="fallbackType">webview</string>
+    <string name="assetStatements">
+        [{
+            \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+            \"target\": {
+                \"namespace\": \"web\",
+                \"site\": \"https://prateepjehovah-creator.github.io\"
+            }
+        }]
+    </string>
+</resources>

@@ -1,0 +1,24 @@
+{
+  "packageId": "io.github.prateepjehovah_creator.neelam",
+  "host": "prateepjehovah-creator.github.io",
+  "name": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+  "launcherName": "நீலக்குரல்",
+  "display": "standalone",
+  "themeColor": "#12224A",
+  "themeColorDark": "#101820",
+  "navigationColor": "#12224A",
+  "navigationColorDark": "#101820",
+  "backgroundColor": "#F3EEE4",
+  "startUrl": "/",
+  "iconUrl": "https://prateepjehovah-creator.github.io/icons/icon-512.png",
+  "maskableIconUrl": "https://prateepjehovah-creator.github.io/icons/icon-maskable-512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": {
+    "alias": "upload"
+  },
+  "generatorApp": "android-browser-helper",
+  "webManifestUrl": "https://prateepjehovah-creator.github.io/manifest.json",
+  "fallbackType": "webview",
+  "features": {}
+}

@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "Neelam P.J. Pradeep Jesudas",
   "short_name": "Neelam",
   "description": "நூல்களும் மொழிபெயர்ப்புகளும் இலவசம். Books and translations, free to read, watch, and download.",
@@ -22,10 +23,73 @@
       "purpose": "any"
     },
     {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
       "src": "/icons/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "நூல்கள்",
+      "short_name": "Books",
+      "url": "/#books",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "பற்றி",
+      "short_name": "About",
+      "url": "/about/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "தொடர்பு",
+      "short_name": "Contact",
+      "url": "/contact/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home"
+    },
+    {
+      "src": "/screenshots/books-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Books"
+    },
+    {
+      "src": "/screenshots/book-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "The Salt Box"
+    },
+    {
+      "src": "/screenshots/contact-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Contact"
+    },
+    {
+      "src": "/screenshots/home-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home"
     }
   ]
 }

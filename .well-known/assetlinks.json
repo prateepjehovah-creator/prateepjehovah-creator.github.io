@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.prateepjehovah_creator.neelam",
+      "sha256_cert_fingerprints": [
+        "9D:24:DD:B2:F3:DD:9A:31:7C:E4:EB:AB:85:F9:22:DB:D2:36:82:21:17:67:AB:B0:A9:70:7A:6A:29:C6:72:FF"
+      ]
+    }
+  }
+]

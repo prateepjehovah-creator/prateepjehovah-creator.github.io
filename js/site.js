@@ -158,4 +158,39 @@
       navigator.serviceWorker.register("/sw.js");
     });
   }
+
+  var installBar = document.getElementById("install-bar");
+  var installBtn = document.getElementById("install-app");
+  var installIos = document.getElementById("install-ios");
+  var standalone = (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
+
+  function hideInstall() {
+    if (installBar) installBar.hidden = true;
+    if (installBtn) installBtn.hidden = true;
+    if (installIos) installIos.hidden = true;
+  }
+
+  if (standalone) {
+    hideInstall();
+  } else if (installBar && installBtn) {
+    var ios = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+    if (ios && installIos) {
+      installBar.hidden = false;
+      installIos.hidden = false;
+    }
+    window.addEventListener("beforeinstallprompt", function (event) {
+      event.preventDefault();
+      installBar.hidden = false;
+      installBtn.hidden = false;
+      if (installIos) installIos.hidden = true;
+      installBtn.onclick = function () {
+        event.prompt();
+        event.userChoice.then(function (choice) {
+          if (choice && choice.outcome === "accepted") hideInstall();
+          else installBtn.hidden = false;
+        });
+      };
+    });
+    window.addEventListener("appinstalled", hideInstall);
+  }
 })();

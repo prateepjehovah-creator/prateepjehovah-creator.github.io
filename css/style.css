@@ -841,6 +841,68 @@ html[data-lang="en"] .shelf-title .ta {
   gap: 0.35rem 0.55rem;
 }
 
+.install-bar {
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.1rem;
+  padding: 0.7rem 1rem;
+  background: var(--salt);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.install-bar:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.install-bar[hidden],
+#install-app[hidden],
+#install-ios[hidden] {
+  display: none !important;
+}
+
+.install-ios {
+  margin: 0;
+}
+
+.subscribe {
+  padding: 0 0 1.25rem;
+}
+
+.subscribe-card {
+  padding: 1.35rem 1.15rem 1.5rem;
+  background: var(--chrome);
+  color: var(--on-chrome);
+  border-bottom: 3px solid var(--clay);
+  text-align: center;
+}
+
+.subscribe-card h2 {
+  color: var(--on-chrome);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.subscribe-card .identity {
+  margin-top: 0.8rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: var(--on-chrome);
+  text-align: center;
+}
+
+.subscribe-card .button {
+  background: var(--on-chrome);
+  color: var(--chrome);
+}
+
+.subscribe-card .button:hover {
+  background: #f3d7bc;
+  color: var(--chrome);
+}
+
 .nav-link,
 .theme-btn {
   display: inline-flex;
