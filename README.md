@@ -8,12 +8,10 @@ The books on this site are offered free to read, watch, listen to, and download.
 
 ## Add a book
 
-1. Copy `books/uppu-petti/` to `books/<slug>/`.
-2. Replace `cover.jpg`, the PDF, `video.mp4`, and the files in `audio/` (`ch01.mp3`, `ch02.mp3`, …). Keep each file under 100 MB.
-3. Edit `books/<slug>/index.html`: titles, description, and the chapter list.
-4. On the home page (`index.html`), duplicate the `<article class="book-card">` and point it at the new folder.
-5. Add the book to `books/catalog.json` and `sitemap.xml`.
-6. Commit to `main`. GitHub Pages serves this repository from the root of `main`.
+1. Create `books/<slug>/` with `index.html`, `cover.jpg`, and the files (`book.pdf`, and `video.mp4` when there is one). Keep each file under 100 MB.
+2. On the home page, add a card under என் நூல்கள் / My Books or மொழிபெயர்ப்புகள் / Translations.
+3. Add the book to `books/catalog.json` and `sitemap.xml`.
+4. Commit to `main`. GitHub Pages serves this repository from the root of `main`.
 
 `books/catalog.json` is the list of books. The pages themselves are written in HTML so they can be read with or without JavaScript.
 

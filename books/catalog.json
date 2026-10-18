@@ -12,7 +12,10 @@
       "year": 2026,
       "pages": 624,
       "format": "A5",
-      "languages": ["ta", "en"],
+      "languages": [
+        "ta",
+        "en"
+      ],
       "cover": "/books/uppu-petti/cover.jpg",
       "pdf": "/books/uppu-petti/uppu-petti.pdf",
       "video": "/books/uppu-petti/video.mp4",
@@ -20,19 +23,327 @@
       "fullAudiobook": "https://github.com/prateepjehovah-creator/prateepjehovah-creator.github.io/releases/download/uppu-petti-audiobook/Uppu-Petti-Tamil-audiobook.mp3",
       "audioNote": "Tamil readings of Part One, chapters 1–12. The English text is in the PDF.",
       "chapters": [
-        {"file": "audio/ch01.mp3", "ta": "ஆச்சியின் இரவுகள்", "en": "Grandmother's Nights"},
-        {"file": "audio/ch02.mp3", "ta": "அப்பாவின் மனுக்கள்", "en": "Appa's Petitions"},
-        {"file": "audio/ch03.mp3", "ta": "கிரீஸ் படிந்த கைகள்", "en": "Hands Stained with Grease"},
-        {"file": "audio/ch04.mp3", "ta": "பெட்ரோலும் சாம்பலும்", "en": "Petrol and Ash"},
-        {"file": "audio/ch05.mp3", "ta": "இரத்தம் படிந்த தெரு", "en": "The Street of Blood"},
-        {"file": "audio/ch06.mp3", "ta": "மாடியில் ஒரு வேலைக்காரன்", "en": "A Servant on the Terrace"},
-        {"file": "audio/ch07.mp3", "ta": "சித்தப்பாவின் சபை", "en": "The Uncle's Church"},
-        {"file": "audio/ch08.mp3", "ta": "சாலேம்", "en": "Salem"},
-        {"file": "audio/ch09.mp3", "ta": "விக்டோரியா டெர்மினஸ்", "en": "Victoria Terminus"},
-        {"file": "audio/ch10.mp3", "ta": "ஜூஹு வரை நடை", "en": "The Walk to Juhu"},
-        {"file": "audio/ch11.mp3", "ta": "தோலின் மேல் எழுதப்பட்ட கடிதம்", "en": "A Letter Written on Skin"},
-        {"file": "audio/ch12.mp3", "ta": "மசாலாவும் நீலமும்", "en": "Masala and Neelam"}
+        {
+          "file": "audio/ch01.mp3",
+          "ta": "ஆச்சியின் இரவுகள்",
+          "en": "Grandmother's Nights"
+        },
+        {
+          "file": "audio/ch02.mp3",
+          "ta": "அப்பாவின் மனுக்கள்",
+          "en": "Appa's Petitions"
+        },
+        {
+          "file": "audio/ch03.mp3",
+          "ta": "கிரீஸ் படிந்த கைகள்",
+          "en": "Hands Stained with Grease"
+        },
+        {
+          "file": "audio/ch04.mp3",
+          "ta": "பெட்ரோலும் சாம்பலும்",
+          "en": "Petrol and Ash"
+        },
+        {
+          "file": "audio/ch05.mp3",
+          "ta": "இரத்தம் படிந்த தெரு",
+          "en": "The Street of Blood"
+        },
+        {
+          "file": "audio/ch06.mp3",
+          "ta": "மாடியில் ஒரு வேலைக்காரன்",
+          "en": "A Servant on the Terrace"
+        },
+        {
+          "file": "audio/ch07.mp3",
+          "ta": "சித்தப்பாவின் சபை",
+          "en": "The Uncle's Church"
+        },
+        {
+          "file": "audio/ch08.mp3",
+          "ta": "சாலேம்",
+          "en": "Salem"
+        },
+        {
+          "file": "audio/ch09.mp3",
+          "ta": "விக்டோரியா டெர்மினஸ்",
+          "en": "Victoria Terminus"
+        },
+        {
+          "file": "audio/ch10.mp3",
+          "ta": "ஜூஹு வரை நடை",
+          "en": "The Walk to Juhu"
+        },
+        {
+          "file": "audio/ch11.mp3",
+          "ta": "தோலின் மேல் எழுதப்பட்ட கடிதம்",
+          "en": "A Letter Written on Skin"
+        },
+        {
+          "file": "audio/ch12.mp3",
+          "ta": "மசாலாவும் நீலமும்",
+          "en": "Masala and Neelam"
+        }
       ]
+    },
+    {
+      "slug": "adiyogi",
+      "kind": "own_work",
+      "titleTa": "ஆதியோகியும் ஆதி மனிதனும்: கைலாயத்திலிருந்து கல்வாரி வரை",
+      "titleEn": "Adiyogi and the First Man: From Kailash to Calvary",
+      "year": "2026",
+      "originalAuthor": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th (Neelam P.J. Pradeep Jesudas)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "கைலாயம், கல்வாரி என்ற இரண்டு மலைகள்; ஒரே தேடல். மனித வாழ்வின் தொடக்கம், மனித இயல்பு, வீழ்ச்சி அல்லது மறதி பற்றிச் சைவ மரபும் விவிலியமும் சொல்வதை மரியாதையுடன் ஒப்பிடும் ஆன்மீக ஆய்வு நூல். \"சிவனே ஆதாம்\" என்று இந்நூல் சொல்லவில்லை.",
+      "descEn": "Two mountains, one search: a respectful comparative study of what the Shaiva tradition and the Bible say about the beginning of human life, human nature and its fall or forgetting. It does not claim that Shiva is Adam.",
+      "cover": "/books/adiyogi/cover.jpg",
+      "page": "/books/adiyogi/",
+      "files": {
+        "book.pdf": "/books/adiyogi/book.pdf",
+        "book_en.pdf": "/books/adiyogi/book_en.pdf",
+        "video.mp4": "/books/adiyogi/video.mp4",
+        "video_en.mp4": "/books/adiyogi/video_en.mp4"
+      }
+    },
+    {
+      "slug": "bible-to-quran",
+      "kind": "own_work",
+      "titleTa": "திருவிவிலியத்திலிருந்து திருக்குர்ஆன்: ஆதி ஒளியின் நிழலில் ஒரு வரலாற்று ஆய்வு",
+      "titleEn": "From the Holy Bible to the Holy Quran: A Historical Inquiry in the Shadow of the Original Light",
+      "year": "2026",
+      "originalAuthor": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th (Neelam P.J. Pradeep Jesudas)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "ஆபிரகாமிய மரபுகளின் வேர்களைத் தோண்டிப் பார்த்தால், முரண்பாடுகளைவிட வியக்கத்தக்க ஒற்றுமைகளே அதிகம் என்பதைக் காட்டும் வரலாறு மற்றும் ஆன்மீக ஆய்வு நூல்.",
+      "descEn": "A study in history and spirituality showing that, dug to their roots, the Abrahamic faiths hold far more astonishing agreement than contradiction.",
+      "cover": "/books/bible-to-quran/cover.jpg",
+      "page": "/books/bible-to-quran/",
+      "files": {
+        "book.pdf": "/books/bible-to-quran/book.pdf",
+        "book_en.pdf": "/books/bible-to-quran/book_en.pdf",
+        "video.mp4": "/books/bible-to-quran/video.mp4",
+        "video_en.mp4": "/books/bible-to-quran/video_en.mp4"
+      }
+    },
+    {
+      "slug": "peniel",
+      "kind": "own_work",
+      "titleTa": "பெனியேல்: ஒற்றைக்கண்ணின் விவிலிய நரம்பியல் ரகசியம்",
+      "titleEn": "Peniel: The Biblical Neurological Secret of the Single Eye",
+      "year": "2026",
+      "originalAuthor": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th (Neelam P.J. Pradeep Jesudas)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "மூளையின் நடுவே பட்டாணி அளவில் இருக்கும் பீனியல் சுரப்பியை \"ஒற்றைக் கண்\" என்று விவிலியப் பார்வையில் விளக்கி, மனித உடலை ஒரு தூய ஆலயமாகக் காட்டும் நூல்.",
+      "descEn": "A book that reads the pea-sized pineal gland at the centre of the brain as the 'single eye' of the Bible, presenting the human body as a sublime temple.",
+      "cover": "/books/peniel/cover.jpg",
+      "page": "/books/peniel/",
+      "files": {
+        "book.pdf": "/books/peniel/book.pdf",
+        "book_en.pdf": "/books/peniel/book_en.pdf",
+        "video.mp4": "/books/peniel/video.mp4"
+      }
+    },
+    {
+      "slug": "tireless-machine",
+      "kind": "own_work",
+      "titleTa": "உள்ளே ஓயாத இயந்திரம், வெளியே உழைக்கும் கரங்கள்: அறிவியல், விவிலியம், யோகம் காட்டும் உடலின் இரகசியம்",
+      "titleEn": "A Tireless Machine Within, Labouring Hands Without: The Secret of the Body in Science, Scripture and Yoga",
+      "year": "2026",
+      "originalAuthor": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ், B.Th (Neelam P.J. Pradeep Jesudas)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "மனித உடல் ஒரே இயந்திரம்; அதற்குள் இரண்டு வகை உழைப்பு. உள்ளே ஓய்வில்லாமல் உழைக்கும் உறுப்புகளையும் வெளியே உழைக்கும் கைகால்களையும் அறிவியல், விவிலியம், யோகம் என்ற மூன்று பார்வைகளில் காட்டும் நூல். (மருத்துவ ஆலோசனை அல்ல.)",
+      "descEn": "One body, two kinds of work, three ways of seeing: the organs that labour without rest inside us and the hands that labour outside, viewed through science, the Bible and yoga. Not medical advice.",
+      "cover": "/books/tireless-machine/cover.jpg",
+      "page": "/books/tireless-machine/",
+      "files": {
+        "book.pdf": "/books/tireless-machine/book.pdf",
+        "book_en.pdf": "/books/tireless-machine/book_en.pdf",
+        "video.mp4": "/books/tireless-machine/video.mp4",
+        "video_en.mp4": "/books/tireless-machine/video_en.mp4"
+      }
+    },
+    {
+      "slug": "francisco",
+      "kind": "public_domain",
+      "titleTa": "பிரான்சிஸ்கோ: சர்க்கரை ஆலைப் பண்ணை, அல்லது கிராம வாழ்வின் இன்பங்கள் (கியூப நாவல்)",
+      "titleEn": "Francisco: The Sugar Mill, or the Delights of the Countryside (A Cuban Novel)",
+      "year": "1838–1839 (written); 1880 (first published, New York)",
+      "originalAuthor": "Anselmo Suárez y Romero (அன்செல்மோ சுவாரெஸ் இ ரொமேரோ, 1818–1878)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "அடிமைமுறை நிலவிய கியூபாவில் அச்சேற முடியாத நாவல். செல்வச் சீமாட்டியின் வீட்டு அடிமைகளான பிரான்சிஸ்கோவும் தொரொதேயாவும் ஒருவரையொருவர் நேசித்து, திருமணம் செய்ய எஜமானியின் அனுமதி கேட்பதிலிருந்து தொடங்கும் துயரக் கதை.",
+      "descEn": "A novel that could not be printed in Cuba while slavery lasted: the story of Francisco and Dorotea, two household slaves who love each other and ask their mistress for permission to marry.",
+      "cover": "/books/francisco/cover.jpg",
+      "page": "/books/francisco/",
+      "files": {
+        "book.pdf": "/books/francisco/book.pdf",
+        "video.mp4": "/books/francisco/video.mp4"
+      }
+    },
+    {
+      "slug": "haetaron",
+      "kind": "public_domain",
+      "titleTa": "சோம்பல் பற்றிய உரை: ஓர் உருவகக் கதை",
+      "titleEn": "A Discourse on Sloth (Haetaron): An Allegory",
+      "year": "1904 (Seoul)",
+      "originalAuthor": "Gil Seon-ju (கில் சொன்-ஜு, 1869–1935)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "கொரியக் கிறிஸ்தவர் ஒருவர் தாமே எழுதிய தொடக்க கால நூல்களுள் ஒன்றான சிறு உருவகக் கதை. மனித வாழ்வை \"விழைவு நகரிலிருந்து\" \"நிறைவேற்ற நாட்டுக்குச்\" செல்லும் பயணமாகச் சித்திரிக்கிறது. கொரிய மூலத்திலிருந்து நேரடியான தமிழாக்கம்.",
+      "descEn": "A short allegory, one of the earliest books written by a Korean Christian himself, picturing human life as a journey from the 'City of Desire' to the 'Land of Fulfilment'. Translated directly from the Korean.",
+      "cover": "/books/haetaron/cover.jpg",
+      "page": "/books/haetaron/",
+      "files": {
+        "book.pdf": "/books/haetaron/book.pdf"
+      }
+    },
+    {
+      "slug": "hakai",
+      "kind": "public_domain",
+      "titleTa": "ஹகாய்: கட்டளையை மீறுதல்",
+      "titleEn": "Hakai (The Broken Commandment)",
+      "year": "1906",
+      "originalAuthor": "Shimazaki Tōson (தோசன் ஷிமாசாகி, 1872–1943)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "\"எத்தா\" என்று இழிவுபடுத்தப்பட்ட, பிறப்பின் அடிப்படையில் ஒதுக்கப்பட்ட சமூகத்தில் பிறந்த பள்ளி ஆசிரியர் உஷிமாட்சு, \"நீ யார் என்பதை ஒருபோதும் வெளிப்படுத்தாதே\" என்ற தந்தையின் கட்டளையைக் காப்பதா மீறுவதா என்று போராடும் ஜப்பானிய நாவல் (1906). ஜப்பானிய மூலத்திலிருந்து நேரடியான, சுருக்கப்படாத தமிழாக்கம்.",
+      "descEn": "A Japanese novel (1906): Ushimatsu, a schoolteacher born into the outcaste 'eta' community, struggles over whether to keep or break his father's command never to reveal who he is. Translated in full directly from the Japanese.",
+      "cover": "/books/hakai/cover.jpg",
+      "page": "/books/hakai/",
+      "files": {
+        "book.pdf": "/books/hakai/book.pdf",
+        "video.mp4": "/books/hakai/video.mp4"
+      }
+    },
+    {
+      "slug": "jathikkummi",
+      "kind": "public_domain",
+      "titleTa": "ஜாதிக்கும்மி",
+      "titleEn": "Jathikkummi",
+      "year": "c. 1904–05 (written); first printed 1911/1912",
+      "originalAuthor": "Pandit K. P. Karuppan (பண்டிட் கே.பி. கருப்பன், 1885–1938)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "மீனவர் சமூகத்தில் பிறந்த சமூகச் சீர்திருத்தவாதி பண்டிட் கே.பி. கருப்பன் கும்மி மெட்டில் எழுதிய 141 பாடல்கள் கொண்ட சாதி எதிர்ப்புக் கவிதை. சங்கரரின் வழியில் பறையன் வேடத்தில் நிற்கும் சிவனின் வாதமும், கேரளத்தின் தூரத் தீண்டல் கொடுமைகளின் நேரடிச் சித்திரமும் இதில் உள்ளன. மலையாள மூலம், தமிழ், ஆங்கிலம்.",
+      "descEn": "An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala's distance-pollution cruelties. Malayalam original with Tamil and English translations.",
+      "cover": "/books/jathikkummi/cover.jpg",
+      "page": "/books/jathikkummi/",
+      "files": {
+        "book.pdf": "/books/jathikkummi/book.pdf"
+      }
+    },
+    {
+      "slug": "las-casas-indies",
+      "kind": "public_domain",
+      "titleTa": "இண்டீஸ் அழிவின் சுருக்க வரலாறு",
+      "titleEn": "A Short Account of the Destruction of the Indies (Brevísima relación de la destrucción de las Indias)",
+      "year": "1542 (written); 1552 (printed, Seville)",
+      "originalAuthor": "Bartolomé de las Casas (பர்த்தலோமே தே லாஸ் காசாஸ், 1484–1566)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "1542-இல் ஸ்பெயின் அரசவையில், நாற்பது ஆண்டுகளாகத் தன் கண்ணால் கண்ட கொடுமைகளைச் சாட்சியமாக முன்வைத்த ஒரு கத்தோலிக்கத் துறவியின் நூல்: அமெரிக்கப் பூர்வகுடி மக்கள் மீது நிகழ்ந்த கொடுமைகளின் கண்கண்ட சாட்சியம்; ஒரு கிறிஸ்தவன் தன் சொந்தச் சமூகத்தின் பாவத்தை எதிர்த்து எழுப்பிய குரல்.",
+      "descEn": "In 1542 a Catholic friar stood before the Spanish court with forty years of eyewitness testimony: an account of the atrocities against the native peoples of the Americas, and a Christian's protest against the sins of his own people.",
+      "cover": "/books/las-casas-indies/cover.jpg",
+      "page": "/books/las-casas-indies/",
+      "files": {
+        "book.pdf": "/books/las-casas-indies/book.pdf",
+        "video.mp4": "/books/las-casas-indies/video.mp4"
+      }
+    },
+    {
+      "slug": "layali-satih",
+      "kind": "public_domain",
+      "titleTa": "சதீஹின் இரவுகள் (அரபு உரைநடை நூல்)",
+      "titleEn": "Nights of Satih (Layālī Saṭīḥ)",
+      "year": "1906 (Cairo)",
+      "originalAuthor": "Muḥammad Ḥāfiẓ Ibrāhīm (முஹம்மது ஹாஃபிஸ் இப்ராஹீம், 1872–1932)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "'நைலின் கவிஞர்' ஹாஃபிஸ் இப்ராஹீமின் ஒரே முழு உரைநடை நூல். நைல் கரையில் இரவுதோறும் துயருற்ற தோழர்கள் தம் குறைகளைச் சொல்ல, பழங்கதைகளின் குறிசொல்லி சதீஹின் மறைந்த குரல் பதில் சொல்கிறது.",
+      "descEn": "The only complete prose work of Egypt's 'Poet of the Nile': on successive nights by the Nile, companions tell their sorrows and the hidden voice of the legendary soothsayer Satih answers them.",
+      "cover": "/books/layali-satih/cover.jpg",
+      "page": "/books/layali-satih/",
+      "files": {
+        "book.pdf": "/books/layali-satih/book.pdf",
+        "video.mp4": "/books/layali-satih/video.mp4"
+      }
+    },
+    {
+      "slug": "multan",
+      "kind": "public_domain",
+      "titleTa": "முல்தான் நரபலி வழக்கு",
+      "titleEn": "The Multan Sacrifice Case (Мултанское жертвоприношение)",
+      "year": "1895–1913",
+      "originalAuthor": "Vladimir Korolenko (விளதீமிர் கொரலென்கோ, 1853–1921)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "1892-இல் ருஷ்யப் பேரரசின் ஸ்தாரி முல்தான் கிராமத்தின் வோத்யாக் (உத்மூர்த்) விவசாயிகள் மீது நரபலிக் குற்றம் சுமத்தப்பட்டது. மூன்றாம் விசாரணையில் எதிர்த்தரப்பில் வாதாடி அவர்களின் விடுதலைக்கு உழைத்த எழுத்தாளர் கொரலென்கோவின் சாட்சியம்.",
+      "descEn": "In 1892 Votyak (Udmurt) peasants of Stary Multan in the Russian Empire were accused of human sacrifice. Korolenko's testimony as a writer who reported the trials and helped defend them until their acquittal in 1896.",
+      "cover": "/books/multan/cover.jpg",
+      "page": "/books/multan/",
+      "files": {
+        "book.pdf": "/books/multan/book.pdf",
+        "video.mp4": "/books/multan/video.mp4"
+      }
+    },
+    {
+      "slug": "prugavin-monastery-prisons",
+      "kind": "public_domain",
+      "titleTa": "மடச் சிறைகள்: சமயக் குழுக்களுக்கு எதிரான போராட்டத்தில் (மதச் சகிப்புத்தன்மை குறித்த கேள்விக்கு)",
+      "titleEn": "Monastery Prisons in the Struggle against Sectarianism (On the Question of Religious Tolerance)",
+      "year": "1905 (Moscow, Posrednik)",
+      "originalAuthor": "A. S. Prugavin (அ. ஸ். ப்ருகாவின், 1850–1920)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "ருஷ்யாவின் சமயச் சிறுபான்மையினரை மடங்களின் சிறைகளில் அடைத்த கொடுமையைப் பற்றி, மனச்சான்றுச் சுதந்திரத்துக்காகக் குரல் கொடுத்த இனவரைவியலாளர் ப்ருகாவின் எழுதிய மூன்று கட்டுரைகளின் தொகுப்பு. ருஷ்ய மூலத்திலிருந்து நேரடியான தமிழாக்கம்.",
+      "descEn": "Three essays by the ethnographer and advocate of freedom of conscience A. S. Prugavin on the imprisonment of Russia's religious dissenters in monastery jails, translated directly from the Russian.",
+      "cover": "/books/prugavin-monastery-prisons/cover.jpg",
+      "page": "/books/prugavin-monastery-prisons/",
+      "files": {
+        "book.pdf": "/books/prugavin-monastery-prisons/book.pdf",
+        "book_bilingual.pdf": "/books/prugavin-monastery-prisons/book_bilingual.pdf",
+        "video.mp4": "/books/prugavin-monastery-prisons/video.mp4"
+      }
+    },
+    {
+      "slug": "rauschenbusch",
+      "kind": "public_domain",
+      "titleTa": "கிறிஸ்தவமும் சமூக நெருக்கடியும்",
+      "titleEn": "Christianity and the Social Crisis",
+      "year": "1907",
+      "originalAuthor": "Walter Rauschenbusch (வால்டர் ரவுஷென்புஷ், 1861–1918)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "நியூயார்க்கின் ஏழைத் தொழிலாளர் பகுதியில் போதகராகப் பணியாற்றிய ரவுஷென்புஷ், எபிரேய இறைவாக்கினர், இயேசுவின் போதனை, தொடக்கக் காலத் திருச்சபை ஆகியவற்றின் சமூக உள்ளடக்கத்தை ஆராய்ந்து, தம் காலச் சமூக நெருக்கடிக்கு முன் திருச்சபை செய்ய வேண்டியதை விவாதிக்கும் 'சமூக நற்செய்தி' நூல். முழு நூலின் தமிழாக்கம்.",
+      "descEn": "The classic of the Social Gospel by a pastor of New York's poor 'Hell's Kitchen': the social content of the Hebrew prophets, Jesus and the early church, why it faded, and what the church must do in the social crisis. Complete Tamil translation.",
+      "cover": "/books/rauschenbusch/cover.jpg",
+      "page": "/books/rauschenbusch/",
+      "files": {
+        "book.pdf": "/books/rauschenbusch/book.pdf",
+        "video.mp4": "/books/rauschenbusch/video.mp4"
+      }
+    },
+    {
+      "slug": "rettaimalai-srinivasan",
+      "kind": "public_domain",
+      "titleTa": "ஜீவிய சரித்திர சுருக்கம் (திவான் பகதூர் இரட்டைமலை சீனிவாசன்)",
+      "titleEn": "A Brief Account of the Life of Diwan Bahadur Rettaimalai Srinivasan (Jeeviya Charithira Surukkam)",
+      "year": "1939 (Madras)",
+      "originalAuthor": "Rettaimalai Srinivasan (இரட்டைமலை சீனிவாசன், 1860–1945)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "தென்னிந்திய நவீன தலித் இயக்கத்தின் நிறுவனர்களில் ஒருவரும், \"பறையன்\" இதழை நிறுவியவரும், வட்டமேசை மாநாடுகளில் அம்பேத்கருடன் ஒடுக்கப்பட்ட வகுப்பினரின் சார்பில் பங்கேற்றவருமான இரட்டைமலை சீனிவாசன் 1939-இல் வெளியிட்ட சுருக்கமான தன்வரலாறு. இதன் ஆங்கில மொழிபெயர்ப்பு.",
+      "descEn": "English translation of the short 1939 autobiography of Rettaimalai Srinivasan, a founder of the modern Dalit movement in South India, founder of the journal Paraiyan and Ambedkar's colleague at the Round Table Conferences.",
+      "cover": "/books/rettaimalai-srinivasan/cover.jpg",
+      "page": "/books/rettaimalai-srinivasan/",
+      "files": {
+        "book.pdf": "/books/rettaimalai-srinivasan/book.pdf"
+      }
+    },
+    {
+      "slug": "southern-horrors",
+      "kind": "public_domain",
+      "titleTa": "தெற்கின் பயங்கரங்கள்: கும்பல் சட்டத்தின் எல்லா முகங்களும்",
+      "titleEn": "Southern Horrors: Lynch Law in All Its Phases",
+      "year": "1892",
+      "originalAuthor": "Ida B. Wells (ஐடா பி. வெல்ஸ், 1862–1931)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "1892-இல் நண்பர்கள் மூவர் கும்பலால் கொல்லப்பட்டு, அச்சகம் சூறையாடப்பட்ட பிறகும் அஞ்சாமல், பெயர்களையும் தேதிகளையும் ஊர்களையும் பதிவு செய்த ஒரு கறுப்பினப் பெண் பத்திரிகையாளரின் சாட்சியம். அமெரிக்கத் தென் மாநிலங்களில் கறுப்பின மக்கள் மீதான கும்பல் கொலைகள் பற்றிய நூல்.",
+      "descEn": "In 1892 a Black woman journalist, whose three friends had been lynched and whose press had been wrecked, recorded names, dates and places: her testimony on mob murders of Black people in the American South.",
+      "cover": "/books/southern-horrors/cover.jpg",
+      "page": "/books/southern-horrors/",
+      "files": {
+        "book.pdf": "/books/southern-horrors/book.pdf",
+        "video.mp4": "/books/southern-horrors/video.mp4"
+      }
     }
   ]
 }

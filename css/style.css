@@ -592,11 +592,15 @@ section[id] {
 }
 
 .video-stage video {
-  width: min(100%, calc(72vh * 0.5625));
+  width: min(100%, 40rem);
   height: auto;
   max-height: 72vh;
   background: #000;
   border-radius: 2px;
+}
+
+.video-stage.portrait video {
+  width: min(100%, calc(72vh * 0.5625));
 }
 
 .ch-jump {
@@ -754,6 +758,66 @@ section[id] {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+}
+
+.shelf {
+  margin-top: 2.4rem;
+}
+
+.shelf-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0 0 1.1rem;
+  text-align: center;
+  font-size: clamp(1.6rem, 5vw, 2.15rem);
+  color: var(--sea);
+}
+
+.shelf-title .en {
+  font-size: 0.58em;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+html[data-lang="en"] .shelf-title .en {
+  order: -1;
+  font-size: 1em;
+  color: var(--sea);
+}
+
+html[data-lang="en"] .shelf-title .ta {
+  font-size: 0.58em;
+  color: var(--ink-soft);
+}
+
+.library {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.library .book-title {
+  font-size: clamp(1.28rem, 3.5vw, 1.65rem);
+}
+
+.credit {
+  margin-top: 0.85rem;
+  color: var(--sea);
+  font-weight: 600;
+}
+
+.pd-note {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 860px) {
+  .library {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 1.35rem;
   }
 }
 
