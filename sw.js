@@ -1,5 +1,5 @@
-/* Page shell only. Large books, audio, and video are not cached. */
-var CACHE = "neelam-shell-v2";
+/* Page shell only. Audio, video, and book files are never cached. */
+var CACHE = "neelam-shell-v3";
 var PRECACHE = [
   "/",
   "/index.html",
@@ -14,6 +14,9 @@ var PRECACHE = [
   "/icons/icon-maskable-192.png",
   "/css/style.css",
   "/js/site.js",
+  "/js/player.js",
+  "/read/",
+  "/read/index.html",
   "/manifest.json",
   "/favicon.svg",
   "/feed.xml",
@@ -82,7 +85,9 @@ self.addEventListener("fetch", function (event) {
   if (req.method !== "GET") return;
   var url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
-  if (/\.(pdf|mp3|mp4|zip)$/i.test(url.pathname)) return;
+  if (req.destination === "audio" || req.destination === "video") return;
+  if (/\.(pdf|mp3|mp4|m4a|wav|webm|zip)$/i.test(url.pathname)) return;
+  if (url.pathname.indexOf("/data/") === 0) return;
   if (req.mode === "navigate") {
     event.respondWith(
       fetch(req).then(function (res) {

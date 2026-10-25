@@ -17,73 +17,9 @@
         "en"
       ],
       "cover": "/books/uppu-petti/cover.jpg",
-      "pdf": "/books/uppu-petti/uppu-petti.pdf",
-      "video": "/books/uppu-petti/video.mp4",
       "page": "/books/uppu-petti/",
-      "fullAudiobook": "https://github.com/prateepjehovah-creator/prateepjehovah-creator.github.io/releases/download/uppu-petti-audiobook/Uppu-Petti-Tamil-audiobook.mp3",
-      "audioNote": "Tamil readings of Part One, chapters 1–12. The English text is in the PDF.",
-      "chapters": [
-        {
-          "file": "audio/ch01.mp3",
-          "ta": "ஆச்சியின் இரவுகள்",
-          "en": "Grandmother's Nights"
-        },
-        {
-          "file": "audio/ch02.mp3",
-          "ta": "அப்பாவின் மனுக்கள்",
-          "en": "Appa's Petitions"
-        },
-        {
-          "file": "audio/ch03.mp3",
-          "ta": "கிரீஸ் படிந்த கைகள்",
-          "en": "Hands Stained with Grease"
-        },
-        {
-          "file": "audio/ch04.mp3",
-          "ta": "பெட்ரோலும் சாம்பலும்",
-          "en": "Petrol and Ash"
-        },
-        {
-          "file": "audio/ch05.mp3",
-          "ta": "இரத்தம் படிந்த தெரு",
-          "en": "The Street of Blood"
-        },
-        {
-          "file": "audio/ch06.mp3",
-          "ta": "மாடியில் ஒரு வேலைக்காரன்",
-          "en": "A Servant on the Terrace"
-        },
-        {
-          "file": "audio/ch07.mp3",
-          "ta": "சித்தப்பாவின் சபை",
-          "en": "The Uncle's Church"
-        },
-        {
-          "file": "audio/ch08.mp3",
-          "ta": "சாலேம்",
-          "en": "Salem"
-        },
-        {
-          "file": "audio/ch09.mp3",
-          "ta": "விக்டோரியா டெர்மினஸ்",
-          "en": "Victoria Terminus"
-        },
-        {
-          "file": "audio/ch10.mp3",
-          "ta": "ஜூஹு வரை நடை",
-          "en": "The Walk to Juhu"
-        },
-        {
-          "file": "audio/ch11.mp3",
-          "ta": "தோலின் மேல் எழுதப்பட்ட கடிதம்",
-          "en": "A Letter Written on Skin"
-        },
-        {
-          "file": "audio/ch12.mp3",
-          "ta": "மசாலாவும் நீலமும்",
-          "en": "Masala and Neelam"
-        }
-      ]
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "adiyogi",
@@ -97,12 +33,8 @@
       "descEn": "Two mountains, one search: a respectful comparative study of what the Shaiva tradition and the Bible say about the beginning of human life, human nature and its fall or forgetting. It does not claim that Shiva is Adam.",
       "cover": "/books/adiyogi/cover.jpg",
       "page": "/books/adiyogi/",
-      "files": {
-        "book.pdf": "/books/adiyogi/book.pdf",
-        "book_en.pdf": "/books/adiyogi/book_en.pdf",
-        "video.mp4": "/books/adiyogi/video.mp4",
-        "video_en.mp4": "/books/adiyogi/video_en.mp4"
-      }
+      "watch": true,
+      "watchEn": true
     },
     {
       "slug": "bible-to-quran",
@@ -116,12 +48,8 @@
       "descEn": "A study in history and spirituality showing that, dug to their roots, the Abrahamic faiths hold far more astonishing agreement than contradiction.",
       "cover": "/books/bible-to-quran/cover.jpg",
       "page": "/books/bible-to-quran/",
-      "files": {
-        "book.pdf": "/books/bible-to-quran/book.pdf",
-        "book_en.pdf": "/books/bible-to-quran/book_en.pdf",
-        "video.mp4": "/books/bible-to-quran/video.mp4",
-        "video_en.mp4": "/books/bible-to-quran/video_en.mp4"
-      }
+      "watch": true,
+      "watchEn": true
     },
     {
       "slug": "peniel",
@@ -135,11 +63,8 @@
       "descEn": "A book that reads the pea-sized pineal gland at the centre of the brain as the 'single eye' of the Bible, presenting the human body as a sublime temple.",
       "cover": "/books/peniel/cover.jpg",
       "page": "/books/peniel/",
-      "files": {
-        "book.pdf": "/books/peniel/book.pdf",
-        "book_en.pdf": "/books/peniel/book_en.pdf",
-        "video.mp4": "/books/peniel/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "tireless-machine",
@@ -153,12 +78,8 @@
       "descEn": "One body, two kinds of work, three ways of seeing: the organs that labour without rest inside us and the hands that labour outside, viewed through science, the Bible and yoga. Not medical advice.",
       "cover": "/books/tireless-machine/cover.jpg",
       "page": "/books/tireless-machine/",
-      "files": {
-        "book.pdf": "/books/tireless-machine/book.pdf",
-        "book_en.pdf": "/books/tireless-machine/book_en.pdf",
-        "video.mp4": "/books/tireless-machine/video.mp4",
-        "video_en.mp4": "/books/tireless-machine/video_en.mp4"
-      }
+      "watch": true,
+      "watchEn": true
     },
     {
       "slug": "francisco",
@@ -172,10 +93,8 @@
       "descEn": "A novel that could not be printed in Cuba while slavery lasted: the story of Francisco and Dorotea, two household slaves who love each other and ask their mistress for permission to marry.",
       "cover": "/books/francisco/cover.jpg",
       "page": "/books/francisco/",
-      "files": {
-        "book.pdf": "/books/francisco/book.pdf",
-        "video.mp4": "/books/francisco/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "haetaron",
@@ -189,9 +108,8 @@
       "descEn": "A short allegory, one of the earliest books written by a Korean Christian himself, picturing human life as a journey from the 'City of Desire' to the 'Land of Fulfilment'. Translated directly from the Korean.",
       "cover": "/books/haetaron/cover.jpg",
       "page": "/books/haetaron/",
-      "files": {
-        "book.pdf": "/books/haetaron/book.pdf"
-      }
+      "watch": false,
+      "watchEn": false
     },
     {
       "slug": "hakai",
@@ -205,10 +123,8 @@
       "descEn": "A Japanese novel (1906): Ushimatsu, a schoolteacher born into the outcaste 'eta' community, struggles over whether to keep or break his father's command never to reveal who he is. Translated in full directly from the Japanese.",
       "cover": "/books/hakai/cover.jpg",
       "page": "/books/hakai/",
-      "files": {
-        "book.pdf": "/books/hakai/book.pdf",
-        "video.mp4": "/books/hakai/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "jathikkummi",
@@ -222,9 +138,8 @@
       "descEn": "An anti-caste poem of 141 songs in the kummi folk-dance metre by the social reformer Pandit K. P. Karuppan, born in a fishing community: Shiva, disguised as a Paraiyan, debates Shankara, followed by a direct portrait of Kerala's distance-pollution cruelties. Malayalam original with Tamil and English translations.",
       "cover": "/books/jathikkummi/cover.jpg",
       "page": "/books/jathikkummi/",
-      "files": {
-        "book.pdf": "/books/jathikkummi/book.pdf"
-      }
+      "watch": false,
+      "watchEn": false
     },
     {
       "slug": "las-casas-indies",
@@ -238,10 +153,8 @@
       "descEn": "In 1542 a Catholic friar stood before the Spanish court with forty years of eyewitness testimony: an account of the atrocities against the native peoples of the Americas, and a Christian's protest against the sins of his own people.",
       "cover": "/books/las-casas-indies/cover.jpg",
       "page": "/books/las-casas-indies/",
-      "files": {
-        "book.pdf": "/books/las-casas-indies/book.pdf",
-        "video.mp4": "/books/las-casas-indies/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "layali-satih",
@@ -255,10 +168,8 @@
       "descEn": "The only complete prose work of Egypt's 'Poet of the Nile': on successive nights by the Nile, companions tell their sorrows and the hidden voice of the legendary soothsayer Satih answers them.",
       "cover": "/books/layali-satih/cover.jpg",
       "page": "/books/layali-satih/",
-      "files": {
-        "book.pdf": "/books/layali-satih/book.pdf",
-        "video.mp4": "/books/layali-satih/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "multan",
@@ -272,10 +183,8 @@
       "descEn": "In 1892 Votyak (Udmurt) peasants of Stary Multan in the Russian Empire were accused of human sacrifice. Korolenko's testimony as a writer who reported the trials and helped defend them until their acquittal in 1896.",
       "cover": "/books/multan/cover.jpg",
       "page": "/books/multan/",
-      "files": {
-        "book.pdf": "/books/multan/book.pdf",
-        "video.mp4": "/books/multan/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "prugavin-monastery-prisons",
@@ -289,11 +198,8 @@
       "descEn": "Three essays by the ethnographer and advocate of freedom of conscience A. S. Prugavin on the imprisonment of Russia's religious dissenters in monastery jails, translated directly from the Russian.",
       "cover": "/books/prugavin-monastery-prisons/cover.jpg",
       "page": "/books/prugavin-monastery-prisons/",
-      "files": {
-        "book.pdf": "/books/prugavin-monastery-prisons/book.pdf",
-        "book_bilingual.pdf": "/books/prugavin-monastery-prisons/book_bilingual.pdf",
-        "video.mp4": "/books/prugavin-monastery-prisons/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "rauschenbusch",
@@ -307,10 +213,8 @@
       "descEn": "The classic of the Social Gospel by a pastor of New York's poor 'Hell's Kitchen': the social content of the Hebrew prophets, Jesus and the early church, why it faded, and what the church must do in the social crisis. Complete Tamil translation.",
       "cover": "/books/rauschenbusch/cover.jpg",
       "page": "/books/rauschenbusch/",
-      "files": {
-        "book.pdf": "/books/rauschenbusch/book.pdf",
-        "video.mp4": "/books/rauschenbusch/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     },
     {
       "slug": "rettaimalai-srinivasan",
@@ -324,9 +228,8 @@
       "descEn": "English translation of the short 1939 autobiography of Rettaimalai Srinivasan, a founder of the modern Dalit movement in South India, founder of the journal Paraiyan and Ambedkar's colleague at the Round Table Conferences.",
       "cover": "/books/rettaimalai-srinivasan/cover.jpg",
       "page": "/books/rettaimalai-srinivasan/",
-      "files": {
-        "book.pdf": "/books/rettaimalai-srinivasan/book.pdf"
-      }
+      "watch": false,
+      "watchEn": false
     },
     {
       "slug": "southern-horrors",
@@ -340,10 +243,8 @@
       "descEn": "In 1892 a Black woman journalist, whose three friends had been lynched and whose press had been wrecked, recorded names, dates and places: her testimony on mob murders of Black people in the American South.",
       "cover": "/books/southern-horrors/cover.jpg",
       "page": "/books/southern-horrors/",
-      "files": {
-        "book.pdf": "/books/southern-horrors/book.pdf",
-        "video.mp4": "/books/southern-horrors/video.mp4"
-      }
+      "watch": true,
+      "watchEn": false
     }
   ]
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ta" data-lang="ta">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="google-site-verification" content="REPLACE_WITH_SEARCH_CONSOLE_TOKEN"> -->
+  <script>
+    try {
+      var savedLang = localStorage.getItem("lang");
+      if (savedLang === "en" || savedLang === "ta") {
+        document.documentElement.setAttribute("data-lang", savedLang);
+        document.documentElement.lang = savedLang;
+      }
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+      var q = new URLSearchParams(location.search).get("readerTheme");
+      var readerTheme = q || localStorage.getItem("neelam-reader-theme");
+      if (readerTheme === "light" || readerTheme === "sepia" || readerTheme === "dark") {
+        document.documentElement.setAttribute("data-reader", readerTheme);
+      }
+    } catch (e) {}
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-title-both="படிக்க · Read" data-title-ta="படிக்க" data-title-en="Read">படிக்க · Read</title>
+  <meta name="description" content="இலவசம்: படிக்க, கேட்க, பார்க்க. Read free, listen, watch — no downloads." data-desc-both="இலவசம்: படிக்க, கேட்க, பார்க்க. Read free, listen, watch — no downloads." data-desc-ta="இலவசம்: படிக்க, கேட்க, பார்க்க." data-desc-en="Read free, listen, watch — no downloads.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#12224a">
+  <meta name="theme-color" content="#101820" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://prateepjehovah-creator.github.io/read/">
+  <link rel="alternate" hreflang="ta" href="https://prateepjehovah-creator.github.io/read/">
+  <link rel="alternate" hreflang="en" href="https://prateepjehovah-creator.github.io/read/">
+  <link rel="alternate" hreflang="x-default" href="https://prateepjehovah-creator.github.io/read/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/css/style.css">
+  <noscript>
+    <style>
+      html .only-ta,
+      html .only-en { display: block !important; }
+    </style>
+  </noscript>
+</head>
+<body data-page="reader">
+  <a class="skip" href="#reader-text">
+    <span class="only-ta" lang="ta">உள்ளடக்கத்திற்குச் செல்</span>
+    <span class="only-en" lang="en">Skip to content</span>
+  </a>
+  <div class="read-progress" id="read-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="படிப்பு நிலை / Reading progress">
+    <span></span>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="only-ta" lang="ta">நீலம்</span>
+      <span class="only-en" lang="en">Neelam</span>
+    </a>
+    <div class="header-tools">
+      <a class="nav-link" href="/about/">
+        <span class="only-ta" lang="ta">பற்றி</span>
+        <span class="only-en" lang="en">About</span>
+      </a>
+      <a class="nav-link" href="/contact/">
+        <span class="only-ta" lang="ta">தொடர்பு</span>
+        <span class="only-en" lang="en">Contact</span>
+      </a>
+      <a class="nav-link" href="https://www.youtube.com/@Jesusisthetrueway.Thelight" rel="me noopener">YouTube</a>
+      <button type="button" class="theme-btn" data-theme-toggle aria-pressed="false">
+        <span class="only-ta" lang="ta">நிறம்</span>
+        <span class="only-en" lang="en">Theme</span>
+      </button>
+      <div class="lang-switch" role="group" aria-label="மொழி / Language">
+        <button type="button" data-set-lang="ta" aria-pressed="true">தமிழ்</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="reader-page">
+    <div class="reader-toolbar">
+      <a class="back" id="reader-back" href="/#books">
+        <span class="only-ta" lang="ta">← நூல்</span>
+        <span class="only-en" lang="en">← Book</span>
+      </a>
+      <div class="reader-tools" role="toolbar" aria-label="படிப்பு கருவிகள் / Reading tools">
+        <button type="button" id="toc-toggle" aria-expanded="false" aria-controls="reader-toc">
+          <span class="only-ta" lang="ta">பொருளடக்கம்</span>
+          <span class="only-en" lang="en">Contents</span>
+        </button>
+        <button type="button" id="font-down" aria-label="சிறிய எழுத்து / Smaller text">A−</button>
+        <button type="button" id="font-up" aria-label="பெரிய எழுத்து / Larger text">A+</button>
+        <button type="button" data-reader-theme="light" aria-pressed="true">
+          <span class="only-ta" lang="ta">வெளிர்</span>
+          <span class="only-en" lang="en">Light</span>
+        </button>
+        <button type="button" data-reader-theme="sepia" aria-pressed="false">
+          <span class="only-ta" lang="ta">சேப்பியா</span>
+          <span class="only-en" lang="en">Sepia</span>
+        </button>
+        <button type="button" data-reader-theme="dark" aria-pressed="false">
+          <span class="only-ta" lang="ta">இருள்</span>
+          <span class="only-en" lang="en">Dark</span>
+        </button>
+        <button type="button" id="reader-listen">
+          <span class="only-ta" lang="ta">கேள்</span>
+          <span class="only-en" lang="en">Listen</span>
+        </button>
+        <a id="reader-watch" href="/#books">
+          <span class="only-ta" lang="ta">பார்</span>
+          <span class="only-en" lang="en">Watch</span>
+        </a>
+      </div>
+    </div>
+    <nav id="reader-toc" class="reader-toc" hidden aria-label="பொருளடக்கம் / Contents"></nav>
+    <article class="reader-sheet" id="reader-sheet">
+      <p class="kicker" id="reader-kicker"></p>
+      <h1 class="reader-title" id="reader-title"></h1>
+      <p class="reader-title-en" id="reader-title-en" lang="en"></p>
+      <p class="reader-artist" id="reader-artist"></p>
+      <h2 class="reader-section-title" id="reader-section-title"></h2>
+      <div class="reader-text" id="reader-text"></div>
+      <div class="reader-turn">
+        <button type="button" class="button-secondary" id="reader-prev">
+          <span class="only-ta" lang="ta">முந்தைய பகுதி</span>
+          <span class="only-en" lang="en">Previous section</span>
+        </button>
+        <button type="button" class="button" id="reader-next">
+          <span class="only-ta" lang="ta">அடுத்த பகுதி</span>
+          <span class="only-en" lang="en">Next section</span>
+        </button>
+      </div>
+      <p class="reader-credit" id="reader-credit"></p>
+    </article>
+    <div class="reader-missing" id="reader-missing" hidden>
+      <p class="only-ta" lang="ta">இந்த நூல் விரைவில்</p>
+      <p class="only-en" lang="en">Open the book text — coming soon.</p>
+      <p class="actions"><a class="button" href="/#books"><span class="only-ta" lang="ta">நூல்கள்</span><span class="only-en" lang="en">Books</span></a></p>
+    </div>
+  </main>
+  <script src="/js/player.js"></script>
+  <script src="/js/site.js"></script>
+</body>
+</html>

@@ -454,6 +454,14 @@ html[data-lang="en"] .book-title .ta {
 .button {
   background: var(--chrome);
   color: var(--on-chrome);
+  border: 0;
+  cursor: pointer;
+}
+
+button.button:disabled,
+button.button-secondary:disabled {
+  opacity: 0.45;
+  cursor: default;
 }
 
 .button:hover {
@@ -1215,4 +1223,463 @@ html[data-theme="dark"] body {
   background:
     radial-gradient(900px 420px at 50% -8%, rgba(226, 181, 124, 0.14), transparent 55%),
     var(--paper);
+}
+
+/* Read / listen / watch. Print hiding is deterrence only. */
+.offer,
+.share-note {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.mode-badges,
+.modes {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.modes {
+  grid-template-columns: 1fr;
+  margin: 1.1rem 0 1.3rem;
+}
+
+.mode-btn,
+.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.05rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.mode-btn {
+  min-height: 4.6rem;
+  padding: 0.8rem 1rem;
+  background: var(--chrome);
+  color: var(--on-chrome);
+}
+
+.mode-btn:hover,
+.badge:hover {
+  background: var(--chrome-2);
+  color: var(--on-chrome);
+}
+
+.mode-btn .mode-en,
+.badge .mode-en {
+  font-weight: 600;
+  font-size: 0.92rem;
+  opacity: 0.82;
+}
+
+.mode-badges {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.badge {
+  align-items: center;
+  text-align: center;
+  background: var(--salt);
+  color: var(--sea);
+  border: 1px solid var(--line);
+}
+
+.badge:hover {
+  border-color: var(--clay);
+  color: var(--clay-deep);
+  background: var(--salt);
+}
+
+.coming {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.watch-stage {
+  margin-top: 0.8rem;
+}
+
+.watch-frame {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.watch-frame video {
+  display: block;
+  width: min(100%, 40rem);
+  max-height: 72vh;
+  margin-inline: auto;
+  background: #000;
+}
+
+.watch-switch {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.7rem;
+}
+
+.watch-switch button,
+.reader-tools button,
+.reader-tools a,
+.player-btn {
+  min-height: 2.75rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--salt);
+  color: var(--sea);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.watch-switch button[aria-pressed="true"],
+.reader-tools button[aria-pressed="true"] {
+  background: var(--chrome);
+  color: var(--on-chrome);
+  border-color: transparent;
+}
+
+.continue-slot {
+  margin-top: 1.4rem;
+}
+
+.continue-card {
+  padding: 1.1rem 1.15rem 1.2rem;
+  background: var(--salt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.continue-title {
+  margin-top: 0.25rem;
+  font-size: 1.45rem;
+  color: var(--sea);
+}
+
+.reader-page {
+  width: min(100% - 1.25rem, 46rem);
+  margin: 0 auto 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.read-progress {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  height: 4px;
+  background: transparent;
+}
+
+.read-progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--clay);
+}
+
+.reader-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0 0.4rem;
+}
+
+.reader-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.reader-toc {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.4rem 0 1rem;
+  padding: 0.7rem;
+  background: var(--salt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.reader-toc a {
+  display: block;
+  padding: 0.55rem 0.45rem;
+  color: var(--sea);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.reader-toc a[aria-current="true"] {
+  background: var(--paper-2);
+}
+
+.reader-sheet {
+  margin-top: 0.4rem;
+  padding: 1.15rem 1rem 1.4rem;
+  background: var(--salt);
+  border-radius: 10px;
+}
+
+.reader-title,
+.reader-section-title {
+  color: var(--sea);
+}
+
+.reader-title {
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+}
+
+.reader-title-en,
+.reader-artist {
+  margin-top: 0.25rem;
+  color: var(--ink-soft);
+}
+
+.reader-section-title {
+  margin-top: 1.2rem;
+  font-size: 1.45rem;
+}
+
+.reader-text {
+  margin-top: 1rem;
+  font-family: "Noto Serif Tamil", "Noto Sans Tamil", "Nirmala UI", serif;
+  font-size: var(--read-size, 1.2rem);
+  line-height: 1.95;
+  /* Deterrence only. This does not stop copying the fetched text. */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.reader-text p + p {
+  margin-top: 1.15em;
+}
+
+.reader-turn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+}
+
+.reader-turn .button,
+.reader-turn .button-secondary {
+  flex: 1 1 10rem;
+  text-align: center;
+}
+
+.reader-credit {
+  margin-top: 1.3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.reader-missing {
+  margin-top: 2rem;
+  padding: 1.2rem 1rem;
+  background: var(--salt);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.player {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #12224a;
+  color: #fbf7f1;
+  padding: 0.55rem 0.7rem calc(0.6rem + env(safe-area-inset-bottom));
+  box-shadow: 0 -10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.player audio {
+  display: none;
+}
+
+.player-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.player-btn,
+.player-select select {
+  background: #1c335f;
+  color: #fbf7f1;
+  border: 1px solid rgba(251, 247, 241, 0.2);
+}
+
+.player-meta {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+.player-title,
+.player-sub,
+.player-time,
+.player-status {
+  margin: 0;
+}
+
+.player-title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-sub,
+.player-time,
+.player-status {
+  color: rgba(251, 247, 241, 0.78);
+  font-size: 0.88rem;
+}
+
+.player-seek-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.player-seek {
+  width: 100%;
+  margin-top: 0.25rem;
+  accent-color: #e2b57c;
+}
+
+.player-select {
+  display: grid;
+  gap: 0.1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.player-select select {
+  min-height: 2.75rem;
+  font: inherit;
+  border-radius: 6px;
+  padding: 0 0.4rem;
+}
+
+.player-section-list {
+  display: grid;
+  gap: 0.25rem;
+  max-height: 38vh;
+  overflow: auto;
+  margin-bottom: 0.45rem;
+}
+
+.player-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.55rem;
+  text-align: start;
+  background: #1c335f;
+  color: #fbf7f1;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.player-section[aria-current="true"] {
+  outline: 2px solid #e2b57c;
+}
+
+.player-section-dur {
+  flex: none;
+  color: rgba(251, 247, 241, 0.75);
+}
+
+body.has-player {
+  padding-bottom: 9rem;
+}
+
+html[data-reader="light"] {
+  --paper: #f6f1e7;
+  --paper-2: #efe6d6;
+  --salt: #fffaf3;
+  --ink: #1c1915;
+  --ink-soft: #3f382f;
+  --muted: #5c564c;
+  --sea: #1c1915;
+  --link: #1a3d78;
+  --line: rgba(28, 25, 21, 0.14);
+}
+
+html[data-reader="sepia"] {
+  --paper: #f3e4cc;
+  --paper-2: #e7d3b0;
+  --salt: #f8edd9;
+  --ink: #3a2a1a;
+  --ink-soft: #5c4632;
+  --muted: #6b5642;
+  --sea: #3a2a1a;
+  --link: #6b3a16;
+  --line: rgba(58, 42, 26, 0.18);
+  --clay: #8a4e24;
+  --clay-deep: #6b3a16;
+  color-scheme: light;
+}
+
+html[data-reader="dark"] {
+  --paper: #14110e;
+  --paper-2: #221c16;
+  --salt: #261f18;
+  --ink: #f6efe4;
+  --ink-soft: #e7d8c4;
+  --muted: #cbbba6;
+  --sea: #f6efe4;
+  --link: #f0d7b4;
+  --line: rgba(246, 239, 228, 0.16);
+  --clay: #e2b57c;
+  --clay-deep: #f0c896;
+  color-scheme: dark;
+}
+
+@media (min-width: 720px) {
+  .modes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .reader-sheet {
+    padding: 1.6rem 1.7rem 1.8rem;
+  }
+}
+
+@media (max-width: 389px) {
+  .reader-page {
+    width: min(100% - 0.8rem, 46rem);
+  }
+
+  .reader-tools button,
+  .reader-tools a {
+    padding-inline: 0.45rem;
+  }
+}
+
+@media print {
+  /* Deterrence only. */
+  body {
+    display: none;
+  }
 }
