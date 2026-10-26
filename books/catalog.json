@@ -142,6 +142,21 @@
       "watchEn": false
     },
     {
+      "slug": "joko-aishi",
+      "kind": "public_domain",
+      "titleTa": "ஜோகோ ஐஷி: பெண் தொழிலாளர் துயர வரலாறு",
+      "titleEn": "Joko Aishi: The Sorrowful History of Women Factory Workers (女工哀史)",
+      "year": "1925",
+      "originalAuthor": "Hosoi Wakizo (ஹோசோயி வகிசோ, 1897–1925)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "ஜப்பான், 1925. முன்னாள் தறிக்கூடத் தொழிலாளியான ஹோசோயி வகிசோ, தாம் உழைத்த நூற்பாலைகளின் உள்ளிருந்து எழுதிய நூல்; நூல் வெளியாகி ஒரு மாதத்துக்குள் அவர் காலமானார். ஜப்பானின் பெண் தொழிலாளர்களின் ஆள்சேர்ப்பு, வேலை ஒப்பந்தம், வேலை நேரம், தங்குமிடம், உணவு, உடல்நலம் பற்றிய நேரடிச் சாட்சியம்.",
+      "descEn": "Japan, 1925. Hosoi Wakizo, a former mill hand, wrote this book from inside the spinning mills; he died within a month of its publication. A first-hand record of how women workers were recruited, bound by contract, housed, fed and worked.",
+      "cover": "/books/joko-aishi/cover.jpg",
+      "page": "/books/joko-aishi/",
+      "watch": true,
+      "watchEn": false
+    },
+    {
       "slug": "las-casas-indies",
       "kind": "public_domain",
       "titleTa": "இண்டீஸ் அழிவின் சுருக்க வரலாறு",
