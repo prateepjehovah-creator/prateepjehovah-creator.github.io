@@ -260,6 +260,21 @@
       "page": "/books/southern-horrors/",
       "watch": true,
       "watchEn": false
+    },
+    {
+      "slug": "walkers-appeal",
+      "kind": "public_domain",
+      "titleTa": "உலகின் நிறமுடைய மக்களுக்கு டேவிட் வாக்கரின் அறைகூவல்",
+      "titleEn": "David Walker’s Appeal to the Coloured Citizens of the World",
+      "year": "1829",
+      "originalAuthor": "David Walker (டேவிட் வாக்கர், 1796?–1830)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "1829-இல் பாஸ்டனில் விடுதலை பெற்ற கறுப்பினத்தவர் டேவிட் வாக்கர் எழுதிய இந்த அறைகூவல், அமெரிக்க அடிமை முறைக்கு எதிராக ஒடுக்கப்பட்ட மக்களைத் தங்கள் மாண்பையும் உரிமையையும் மீட்க எழுமாறு அழைத்தது. அடிமை முறை, அறியாமை, போலிக் கிறிஸ்தவம், குடியேற்றத் திட்டம் என நான்கு கட்டுரைகள் (மூன்றாம் பதிப்பு, 1830).",
+      "descEn": "Written in Boston in 1829 by David Walker, a free Black man, this Appeal called the enslaved and oppressed of America to rise and reclaim their dignity and rights. Four articles on slavery, ignorance, false Christianity and the colonization plan (3rd edition, 1830).",
+      "cover": "/books/walkers-appeal/cover.jpg",
+      "page": "/books/walkers-appeal/",
+      "watch": true,
+      "watchEn": false
     }
   ]
 }
