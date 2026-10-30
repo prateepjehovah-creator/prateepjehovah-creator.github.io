@@ -1,5 +1,5 @@
 /* Page shell only. Audio, video, and book files are never cached. */
-var CACHE = "neelam-shell-v5";
+var CACHE = "neelam-shell-v6";
 var PRECACHE = [
   "/",
   "/index.html",

@@ -47,7 +47,33 @@
     "மூன்றாம் பதிப்புக்கான ஆசிரியர் குறிப்பு",
     "முகவுரை (Preamble)"
    ],
-   "audio_intro": "உலகின் நிறமுடைய மக்களுக்கு டேவிட் வாக்கரின் அறைகூவல். மூல ஆசிரியர்: டேவிட் வாக்கர். தமிழில்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்."
+   "audio_intro": "உலகின் நிறமுடைய மக்களுக்கு டேவிட் வாக்கரின் அறைகூவல். மூல ஆசிரியர்: டேவிட் வாக்கர். தமிழில்: நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்.",
+   "figures": [
+    {
+     "after": 6,
+     "src": "/books/walkers-appeal/img/09.jpg",
+     "width": 1400,
+     "height": 913,
+     "caption": "பாஸ்டன் நகரின் ஃபனேயுல் ஹால் சந்தைப் பகுதி (Faneuil Hall Market), 1833 — வாக்கர் வாழ்ந்து, கடை நடத்தி, இந்நூலை எழுதிய நகரம்.",
+     "credit": "Bowen’s Picture of Boston (1833), Internet Archive Book Images"
+    },
+    {
+     "after": 16,
+     "src": "/books/walkers-appeal/img/01.jpg",
+     "width": 1400,
+     "height": 2520,
+     "caption": "1830-இல் வெளியான மூன்றாம் பதிப்பின் மூல ஆங்கிலத் தலைப்புப் பக்கம்.",
+     "credit": "Walker’s Appeal, 3rd ed., Boston, 1830 — Public domain"
+    },
+    {
+     "after": 31,
+     "src": "/books/walkers-appeal/img/04.jpg",
+     "width": 1400,
+     "height": 1621,
+     "caption": "“நானும் ஒரு மனிதனும் சகோதரனும் அல்லவா?” (Am I Not a Man and a Brother?) — அடிமை முறை ஒழிப்பு இயக்கத்தின் சின்னமான வெட்ஜ்வுட் (Wedgwood) பதக்கம், 1787.",
+     "credit": "Walters Art Museum — Public domain"
+    }
+   ]
   },
   {
    "n": 2,
@@ -101,6 +127,32 @@
    ],
    "subheads": [
     "முதல் கட்டுரை: அடிமை முறையின் விளைவான நம் துயர நிலை"
+   ],
+   "figures": [
+    {
+     "after": 12,
+     "src": "/books/walkers-appeal/img/05.jpg",
+     "width": 1400,
+     "height": 1670,
+     "caption": "தாமஸ் ஜெஃபர்சன் (Thomas Jefferson), 1800 — இவருடைய “வர்ஜீனியா பற்றிய குறிப்புகள்” நூலை வாக்கர் முதல் கட்டுரையில் கடுமையாக மறுக்கிறார்.",
+     "credit": "Rembrandt Peale, oil on canvas, White House — Public domain"
+    },
+    {
+     "after": 14,
+     "src": "/books/walkers-appeal/img/11.jpg",
+     "width": 860,
+     "height": 838,
+     "caption": "அமெரிக்கத் தலைநகரின் நாடாளுமன்றக் கட்டடத்தைக் கடந்து சங்கிலியில் பிணைக்கப்பட்டு நடத்திச் செல்லப்படும் அடிமைகள்.",
+     "credit": "A slave‑coffle passing the Capitol, 1876 engraving — Library of Congress, Public domain"
+    },
+    {
+     "after": 26,
+     "src": "/books/walkers-appeal/img/03.jpg",
+     "width": 900,
+     "height": 1140,
+     "caption": "அடிமைக் கப்பல் “ப்ரூக்ஸ்” (Brookes) — மனிதர்கள் சரக்குபோல் அடுக்கப்பட்ட விதத்தைக் காட்டும் புகழ்பெற்ற வரைபடம், 1787.",
+     "credit": "James Phillips, London, 1787 — British Library, Public domain"
+    }
    ]
   },
   {
@@ -137,6 +189,24 @@
    ],
    "subheads": [
     "இரண்டாம் கட்டுரை: அறியாமையின் விளைவான நம் துயர நிலை"
+   ],
+   "figures": [
+    {
+     "after": 3,
+     "src": "/books/walkers-appeal/img/06.jpg",
+     "width": 900,
+     "height": 1576,
+     "caption": "ஹைட்டி விடுதலைப் புரட்சியின் தலைவர் துசேன் லூவர்த்யூர் (Toussaint Louverture) — 1806 செதுக்கு ஓவியம்.",
+     "credit": "Regge & Meineck, 1806 — Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+     "after": 11,
+     "src": "/books/walkers-appeal/img/14.jpg",
+     "width": 1400,
+     "height": 1057,
+     "caption": "ஆப்பிரிக்க மெதடிஸ்ட் எபிஸ்கோபல் (A.M.E.) திருச்சபையின் பேராயர்கள்; நடுவில் அதன் நிறுவனர் பேராயர் ரிச்சர்ட் ஆலன் (Richard Allen).",
+     "credit": "Library Company of Philadelphia, 19th‑c. lithograph — No known restrictions"
+    }
    ]
   },
   {
@@ -172,6 +242,16 @@
    ],
    "subheads": [
     "மூன்றாம் கட்டுரை: இயேசு கிறிஸ்துவின் மார்க்கத்தைப் போதிப்போரின் விளைவாக நம் இழிநிலை"
+   ],
+   "figures": [
+    {
+     "after": 15,
+     "src": "/books/walkers-appeal/img/08.jpg",
+     "width": 1280,
+     "height": 1024,
+     "caption": "வர்ஜீனியாவில் அடிமைகள் ஏலம், 1861 — “கிறிஸ்தவ” நாட்டில் மனிதர்கள் விற்கப்பட்ட காட்சி.",
+     "credit": "Illustrated London News, 16 Feb 1861 — Public domain"
+    }
    ]
   },
   {
@@ -278,6 +358,32 @@
     "நான்காம் கட்டுரை: குடியேற்றத் திட்டத்தின் விளைவாக நம் இழிநிலை",
     "ரோனோக்கைச் (Roanoke) சேர்ந்த திரு. ஜான் ராண்டால்ஃப் (John Randolph) அவர்களின் உரையிலிருந்து ஒரு பகுதி",
     "1776 ஜூலை 4 அன்று செய்யப்பட்ட ஒரு பிரகடனம்"
+   ],
+   "figures": [
+    {
+     "after": 1,
+     "src": "/books/walkers-appeal/img/12.jpg",
+     "width": 900,
+     "height": 1110,
+     "caption": "ஹென்றி கிளே (Henry Clay) — அமெரிக்கக் குடியேற்றச் சங்கத்தின் (American Colonization Society) முன்னணித் தலைவர்; நான்காம் கட்டுரை இவரது உரையை மறுக்கிறது.",
+     "credit": "Engraved portrait, National Museum of American History — Public domain"
+    },
+    {
+     "after": 18,
+     "src": "/books/walkers-appeal/img/07.jpg",
+     "width": 1400,
+     "height": 1454,
+     "caption": "லைபீரியா குடியேற்றப் பகுதியின் வரைபடம், 1839 — விடுதலை பெற்ற கறுப்பர்களை ஆப்பிரிக்காவுக்கு அனுப்பும் திட்டத்தின் இலக்கு.",
+     "credit": "S. Augustus Mitchell, 1839 — Public domain"
+    },
+    {
+     "after": 39,
+     "src": "/books/walkers-appeal/img/10.jpg",
+     "width": 1400,
+     "height": 919,
+     "caption": "சுதந்திரப் பிரகடனம் கையெழுத்தாகும் காட்சி — “எல்லா மனிதரும் சமமாகப் படைக்கப்பட்டுள்ளனர்” என்ற வாசகத்தை வாக்கர் அமெரிக்காவின் முகத்துக்கு நேரே திருப்பிக் காட்டுகிறார்.",
+     "credit": "John Trumbull, 1819 — Public domain"
+    }
    ]
   }
  ]

@@ -629,10 +629,36 @@
       document.getElementById("reader-kicker").textContent = section.n + " / " + chapters.sections.length;
       document.getElementById("reader-section-title").textContent = section.title || "";
       text.innerHTML = "";
-      (section.paragraphs || []).forEach(function (paragraph) {
+      var figures = section.figures || [];
+      function addFigure(fig) {
+        if (!fig || typeof fig.src !== "string" || fig.src.charAt(0) !== "/") return;
+        var figure = document.createElement("figure");
+        figure.className = "reader-figure";
+        var img = document.createElement("img");
+        img.src = fig.src;
+        img.loading = "lazy";
+        img.decoding = "async";
+        if (fig.width) img.width = fig.width;
+        if (fig.height) img.height = fig.height;
+        img.alt = fig.caption || "";
+        figure.appendChild(img);
+        if (fig.caption || fig.credit) {
+          var cap = document.createElement("figcaption");
+          cap.textContent = fig.caption || "";
+          if (fig.credit) {
+            var small = document.createElement("small");
+            small.textContent = fig.credit;
+            cap.appendChild(small);
+          }
+          figure.appendChild(cap);
+        }
+        text.appendChild(figure);
+      }
+      (section.paragraphs || []).forEach(function (paragraph, i) {
         var p = document.createElement("p");
         p.textContent = paragraph;
         text.appendChild(p);
+        figures.forEach(function (fig) { if (fig.after === i) addFigure(fig); });
       });
       var prev = document.getElementById("reader-prev");
       var next = document.getElementById("reader-next");
