@@ -1718,3 +1718,10 @@ html[data-reader="dark"] {
 .frontis-plate img { width: 100%; height: auto; }
 .frontis-plate figcaption { font-size: 0.86em; line-height: 1.6; margin-top: 0.5em; opacity: 0.85; }
 .frontis-plate figcaption small { display: block; opacity: 0.75; }
+
+/* full byline */
+.identity small, .byline-top small, .byline-foot small { font-size: 0.86em; font-weight: 500; }
+.identity strong, .byline-top strong { font-weight: 700; }
+.byline-top { margin: 0.6rem auto 0.4rem; color: var(--sea); line-height: 1.6; }
+.byline-foot { margin: 0.3rem auto 0; color: var(--ink-soft); }
+.hero .name-stack .ta-name { overflow-wrap: anywhere; }
