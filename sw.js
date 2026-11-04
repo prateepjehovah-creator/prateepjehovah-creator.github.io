@@ -1,5 +1,5 @@
 /* Page shell only. Audio, video, and book files are never cached. */
-var CACHE = "neelam-shell-v11";
+var CACHE = "neelam-shell-v12";
 var PRECACHE = [
   "/",
   "/index.html",
@@ -63,7 +63,9 @@ var PRECACHE = [
   "/books/native-life-south-africa/",
   "/books/native-life-south-africa/index.html",
   "/books/urimai-namathu/",
-  "/books/urimai-namathu/index.html"
+  "/books/urimai-namathu/index.html",
+  "/books/urimai-namathu-2/",
+  "/books/urimai-namathu-2/index.html"
 ];
 
 self.addEventListener("install", function (event) {
