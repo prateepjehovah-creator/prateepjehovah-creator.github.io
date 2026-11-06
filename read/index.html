@@ -45,7 +45,26 @@
       html .only-en { display: block !important; }
     </style>
   </noscript>
-  <script>if(/[?&]b=urimai-namathu(-2)?(&|$)/.test(location.search)){document.documentElement.style.userSelect="none";document.documentElement.style.webkitUserSelect="none";document.addEventListener("contextmenu",function(e){e.preventDefault()});document.addEventListener("copy",function(e){e.preventDefault()});}</script>
+  <script>
+    (function () {
+      var q = location.search;
+      if (/[?&]b=urimai-namathu(-[23])?(&|$)/.test(q)) {
+        document.documentElement.style.userSelect = "none";
+        document.documentElement.style.webkitUserSelect = "none";
+        document.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+        document.addEventListener("copy", function (e) { e.preventDefault(); });
+      }
+      /* Part 3 has no audio or video. Hide those reader controls before paint. */
+      if (/[?&]b=urimai-namathu-3(&|$)/.test(q)) {
+        document.addEventListener("DOMContentLoaded", function () {
+          var listen = document.getElementById("reader-listen");
+          var watch = document.getElementById("reader-watch");
+          if (listen) listen.hidden = true;
+          if (watch) watch.hidden = true;
+        });
+      }
+    })();
+  </script>
 </head>
 <body data-page="reader">
   <a class="skip" href="#reader-text">
