@@ -590,11 +590,20 @@
     var back = document.getElementById("reader-back");
     if (back) back.href = "/books/" + slug + "/";
     var watch = document.getElementById("reader-watch");
-    if (watch) watch.href = "/books/" + slug + "/#watch";
-    document.getElementById("reader-listen").addEventListener("click", function () {
-      var n = currentReaderSection || 1;
-      listen(slug, n, (readJson("neelam-listen:" + slug) || {}).t || 0);
-    });
+    var listenBtn = document.getElementById("reader-listen");
+    /* Part 3 is online reading only. Do not offer listen or watch controls. */
+    var readOnlyOnline = slug === "urimai-namathu-3";
+    if (watch) {
+      if (readOnlyOnline) watch.hidden = true;
+      else watch.href = "/books/" + slug + "/#watch";
+    }
+    if (listenBtn) {
+      if (readOnlyOnline) listenBtn.hidden = true;
+      else listenBtn.addEventListener("click", function () {
+        var n = currentReaderSection || 1;
+        listen(slug, n, (readJson("neelam-listen:" + slug) || {}).t || 0);
+      });
+    }
     var text = document.getElementById("reader-text");
     /* Deterrence only. */
     text.addEventListener("contextmenu", function (event) { event.preventDefault(); });
@@ -703,7 +712,9 @@
           head.textContent = lang() === "en" ? titleEn : titleTa + " · " + titleEn;
         }
         var credit = document.getElementById("reader-credit");
-        var own = "Copyright: © நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ் — இந்த தளத்தில் மட்டும் படிக்கவும் கேட்கவும்";
+        var own = slug === "urimai-namathu-3"
+          ? "© 2026 ஜெய் பீம் கல்வி தொண்டு அறக்கட்டளை. அனுமதியின்றி இந்நூலை முழுமையாகவோ பகுதியாகவோ பதிவிறக்கம், மறுபதிப்பு, விற்பனை செய்யக் கூடாது. இணையத்தில் படிக்க மட்டுமே."
+          : "Copyright: © நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ் — இந்த தளத்தில் மட்டும் படிக்கவும் கேட்கவும்";
         if (meta.kind === "public_domain") {
           var author = meta.originalAuthor || meta.original_author || "";
           credit.innerHTML = '<span class="only-ta" lang="ta"></span><span class="only-en" lang="en"></span>';
@@ -718,7 +729,9 @@
           var a = document.createElement("a");
           a.href = "/read/?b=" + encodeURIComponent(slug) + "&s=" + section.n;
           a.setAttribute("data-n", String(section.n));
-          a.textContent = section.n + ". " + (section.title || "") + " · " + clock(section.duration_sec);
+          var tocLabel = section.n + ". " + (section.title || "");
+          if (section.duration_sec) tocLabel += " · " + clock(section.duration_sec);
+          a.textContent = tocLabel;
           a.addEventListener("click", function (event) {
             event.preventDefault();
             showSection(section.n, 0);
