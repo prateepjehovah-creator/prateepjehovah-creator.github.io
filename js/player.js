@@ -32,6 +32,11 @@
   }
 
   function audioUrl(slug, n) {
+    /* A book may store chapter files on this site when audioHost is "site".
+       Every other book keeps using the release address. */
+    if (book && book.audioHost === "site" && (book.slug === slug || book.slug === undefined)) {
+      return "/books/" + slug + "/audio/" + pad2(n) + ".mp3";
+    }
     return audioBase() + slug + "/" + pad2(n) + ".mp3";
   }
 
@@ -562,6 +567,75 @@
     return size;
   }
 
+  function renderReaderBody(text, section) {
+    text.innerHTML = "";
+    var figures = (section && section.figures) || [];
+    function addFigure(fig) {
+      if (!fig || typeof fig.src !== "string" || fig.src.charAt(0) !== "/") return;
+      var figure = document.createElement("figure");
+      figure.className = "reader-figure";
+      var img = document.createElement("img");
+      img.src = fig.src;
+      img.loading = "lazy";
+      img.decoding = "async";
+      if (fig.width) img.width = fig.width;
+      if (fig.height) img.height = fig.height;
+      img.alt = fig.alt || fig.caption || "";
+      figure.appendChild(img);
+      if (fig.caption || fig.credit || fig.modern) {
+        var cap = document.createElement("figcaption");
+        if (fig.modern) {
+          var flag = document.createElement("strong");
+          flag.className = "modern-photo";
+          flag.textContent = "நவீன புகைப்படம். ";
+          cap.appendChild(flag);
+        }
+        if (fig.caption) cap.appendChild(document.createTextNode(fig.caption));
+        if (fig.credit) {
+          var small = document.createElement("small");
+          small.textContent = fig.credit;
+          cap.appendChild(small);
+        }
+        figure.appendChild(cap);
+      }
+      text.appendChild(figure);
+    }
+    function addBlock(block, index) {
+      var kind = (block && (block.type || block.kind)) || "p";
+      var el;
+      if (kind === "h" || kind === "subhead") {
+        el = document.createElement("h3");
+        el.className = "reader-subhead";
+      } else if (kind === "quote" || kind === "scripture") {
+        el = document.createElement("blockquote");
+        el.className = "scripture";
+      } else if (kind === "note") {
+        el = document.createElement("p");
+        el.className = "source-note";
+      } else {
+        el = document.createElement("p");
+        kind = "p";
+      }
+      el.textContent = (block && block.text) || "";
+      text.appendChild(el);
+      if ((kind === "quote" || kind === "scripture") && block.cite) {
+        var cite = document.createElement("p");
+        cite.className = "scripture-cite";
+        cite.textContent = block.cite;
+        text.appendChild(cite);
+      }
+      figures.forEach(function (fig) { if (fig.after === index) addFigure(fig); });
+    }
+    var blocks = section && section.blocks;
+    if (blocks && blocks.length) {
+      blocks.forEach(addBlock);
+      return;
+    }
+    ((section && section.paragraphs) || []).forEach(function (paragraph, index) {
+      addBlock({ type: "p", text: paragraph }, index);
+    });
+  }
+
   function bootReader() {
     if (document.body.getAttribute("data-page") !== "reader") return;
     var params = new URLSearchParams(location.search);
@@ -637,38 +711,7 @@
       currentReaderSection = section.n;
       document.getElementById("reader-kicker").textContent = section.n + " / " + chapters.sections.length;
       document.getElementById("reader-section-title").textContent = section.title || "";
-      text.innerHTML = "";
-      var figures = section.figures || [];
-      function addFigure(fig) {
-        if (!fig || typeof fig.src !== "string" || fig.src.charAt(0) !== "/") return;
-        var figure = document.createElement("figure");
-        figure.className = "reader-figure";
-        var img = document.createElement("img");
-        img.src = fig.src;
-        img.loading = "lazy";
-        img.decoding = "async";
-        if (fig.width) img.width = fig.width;
-        if (fig.height) img.height = fig.height;
-        img.alt = fig.caption || "";
-        figure.appendChild(img);
-        if (fig.caption || fig.credit) {
-          var cap = document.createElement("figcaption");
-          cap.textContent = fig.caption || "";
-          if (fig.credit) {
-            var small = document.createElement("small");
-            small.textContent = fig.credit;
-            cap.appendChild(small);
-          }
-          figure.appendChild(cap);
-        }
-        text.appendChild(figure);
-      }
-      (section.paragraphs || []).forEach(function (paragraph, i) {
-        var p = document.createElement("p");
-        p.textContent = paragraph;
-        text.appendChild(p);
-        figures.forEach(function (fig) { if (fig.after === i) addFigure(fig); });
-      });
+      renderReaderBody(text, section);
       var prev = document.getElementById("reader-prev");
       var next = document.getElementById("reader-next");
       prev.disabled = found.index === 0;
@@ -814,5 +857,5 @@
     });
   });
 
-  window.NeelamLibrary = { listen: listen, audioUrl: audioUrl };
+  window.NeelamLibrary = { listen: listen, audioUrl: audioUrl, renderReaderBody: renderReaderBody };
 })();

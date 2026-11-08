@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ta">
+<body>
+<div id="rich"></div>
+<div id="plain"></div>
+<script src="/js/player.js"></script>
+<script>
+NeelamLibrary.renderReaderBody(document.getElementById("rich"), {
+  blocks: [
+    {type: "p", text: "சாதாரண வரி"},
+    {type: "quote", text: "விண்மீன்களைப் போல", cite: "ஆதியாகமம் 22:17 · கருத்துச் சுருக்கம்"},
+    {type: "note", text: "இது ஆசிரியர் விளக்கம்."}
+  ],
+  figures: [{
+    after: 0,
+    src: "/books/abraham-manal/img/ur-facade.jpg",
+    caption: "ஊர் சீகுராத்தின் முகப்பு.",
+    credit: "Public domain",
+    modern: true,
+    alt: "நவீன புகைப்படம், ஊர் சீகுராத்"
+  }]
+});
+NeelamLibrary.renderReaderBody(document.getElementById("plain"), {
+  paragraphs: ["பழைய பாணி பத்தி"]
+});
+</script>
+</body>
+</html>
