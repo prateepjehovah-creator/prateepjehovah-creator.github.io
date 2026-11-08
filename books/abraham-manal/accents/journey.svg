@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" role="img" aria-labelledby="title desc">
+  <title id="title">திசை காட்டும் வரைகலை</title>
+  <desc id="desc">ஊர், ஹாரன், காணான், எகிப்து ஆகிய பெயர்களைக் காட்டும் எளிய வரைகலை. இது அளவீட்டு வரைபடம் அல்ல. நவீன புகைப்படம் அல்ல. ஆபிரகாமின் உருவப்படம் அல்ல.</desc>
+  <rect width="880" height="420" fill="#f7f1e6"/>
+  <rect x="24" y="24" width="832" height="372" fill="none" stroke="#12224a" stroke-width="2"/>
+  <text x="48" y="68" fill="#8a4e24" font-family="Noto Sans Tamil, Noto Sans Tamil, sans-serif" font-size="22">திசை காட்டும் வரைகலை</text>
+  <text x="48" y="98" fill="#5c564c" font-family="Noto Sans Tamil, sans-serif" font-size="16">அளவீட்டு வரைபடம் அல்ல · நவீன புகைப்படம் அல்ல</text>
+  <path d="M150 250 C 250 160, 360 150, 470 210 S 690 300, 740 180" fill="none" stroke="#a86b3c" stroke-width="3" stroke-dasharray="7 8"/>
+  <g fill="#12224a" font-family="Noto Sans Tamil, sans-serif" font-size="20">
+    <circle cx="150" cy="250" r="7"/>
+    <text x="120" y="284">ஊர்</text>
+    <circle cx="360" cy="168" r="7"/>
+    <text x="330" y="150">ஹாரன்</text>
+    <circle cx="520" cy="230" r="7"/>
+    <text x="486" y="268">காணான்</text>
+    <circle cx="740" cy="180" r="7"/>
+    <text x="700" y="160">எகிப்து</text>
+  </g>
+</svg>

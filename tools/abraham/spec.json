@@ -1,0 +1,62 @@
+{
+  "slug": "abraham-manal",
+  "titleTa": "ஆபிரகாம்: மணல் துகள்களின் பேரரசன்",
+  "titleEn": "Abraham: Emperor of the Grains of Sand",
+  "titleEnNote": "English name of the Tamil title only. The book is an original Tamil work, not an English edition and not a translation.",
+  "authorTa": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+  "authorEn": "Neelam P.J. Pradeep Jesudas",
+  "publisherTa": "ஜெய் பீம் எஜுகேஷனல் அண்ட் சேரிடபிள் டிரஸ்ட்",
+  "publisherEn": "Jai Bhim Educational Charitable Trust",
+  "year": "2026",
+  "kind": "own_work",
+  "languages": ["ta"],
+  "chapterCount": 10,
+  "apparatus": ["முன்னுரை", "முடிவுரை", "நூற்பட்டியல்"],
+  "manuscript": {
+    "statusMarkers": ["status: approved", "நிலை: அங்கீகரிக்கப்பட்டது"],
+    "kindMarkers": ["வகை: மூலநூல்", "kind: own_work"],
+    "chapterHeading": "^#{2,3}[ \\t]+அத்தியாயம்[ \\t]+(10|[1-9])\\b",
+    "rejectMalayalam": true,
+    "paths": [
+      "tools/abraham/edited-manuscript.md",
+      "edited-manuscript.md"
+    ]
+  },
+  "placement": {
+    "catalog": "Insert before the adiyogi entry, with kind own_work and no translator field.",
+    "home": "Card inside #my-books, after உப்புப் பெட்டி and before ஆதியோகி. Never under மொழிபெயர்ப்புகள்.",
+    "sitemap": true,
+    "feed": true,
+    "read": "/read/?b=abraham-manal&s=1"
+  },
+  "media": {
+    "audioHost": "site",
+    "audioPattern": "/books/abraham-manal/audio/NN.mp3",
+    "audioWhy": "The player normally loads GitHub release files audio-<slug>/NN.mp3. This environment cannot open a release. Chapter files therefore live on the site and chapters.json sets audioHost to site. They are synthesized speech, not a studio recording.",
+    "voice": "ta-IN-ValluvarNeural",
+    "voiceLabelTa": "செயற்கைக் குரல் (Microsoft ta-IN-ValluvarNeural). இது ஆசிரியரின் குரல் பதிவு அல்ல.",
+    "voiceLabelEn": "Synthesized narration (Microsoft Tamil voice Valluvar). Not a recording of the author.",
+    "video": "/books/abraham-manal/video.mp4",
+    "videoNote": "One chapter-marked slideshow built from the approved text, the licensed stills, and the synthesized narration. No YouTube upload.",
+    "pdf": "/books/abraham-manal/abraham-manal.pdf",
+    "budgets": {
+      "audioBytes": 70000000,
+      "videoBytes": 80000000,
+      "pdfBytes": 25000000
+    }
+  },
+  "photos": {
+    "rule": "Every photograph is a modern picture of a place, sky, or excavation. Captions say so. None is a portrait of Abraham or archaeological proof of a personal scene.",
+    "allowedLicenses": [
+      "Public domain",
+      "CC0",
+      "CC BY 2.0",
+      "CC BY 3.0",
+      "CC BY 4.0",
+      "CC BY-SA 2.0",
+      "CC BY-SA 2.5",
+      "CC BY-SA 3.0",
+      "CC BY-SA 4.0"
+    ]
+  }
+}
