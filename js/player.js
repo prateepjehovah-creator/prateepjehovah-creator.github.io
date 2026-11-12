@@ -631,9 +631,26 @@
       blocks.forEach(addBlock);
       return;
     }
+    var headIndex = {};
+    ((section && section.subheads) || []).forEach(function (n) { headIndex[n] = true; });
     ((section && section.paragraphs) || []).forEach(function (paragraph, index) {
-      addBlock({ type: "p", text: paragraph }, index);
+      var image = imageParagraph(paragraph);
+      if (image) {
+        addFigure(image);
+        figures.forEach(function (fig) { if (fig.after === index) addFigure(fig); });
+        return;
+      }
+      addBlock({ type: headIndex[index] ? "subhead" : "p", text: paragraph }, index);
     });
+  }
+
+  function imageParagraph(text) {
+    var raw = String(text || "").trim();
+    var markdown = raw.match(/^!\[([^\]]*)\]\((\/books\/[a-z0-9-]+\/img\/[A-Za-z0-9_.-]+\.(?:jpg|jpeg|png|webp))\)$/);
+    if (markdown) return { src: markdown[2], caption: markdown[1] };
+    var plain = raw.match(/^(\/books\/[a-z0-9-]+\/img\/[A-Za-z0-9_.-]+\.(?:jpg|jpeg|png|webp))$/);
+    if (plain) return { src: plain[1], caption: "" };
+    return null;
   }
 
   function bootReader() {

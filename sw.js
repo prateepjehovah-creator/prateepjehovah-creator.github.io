@@ -1,5 +1,5 @@
 /* Page shell only. Audio, video, and book files are never cached. */
-var CACHE = "neelam-shell-v15";
+var CACHE = "neelam-shell-v16";
 var PRECACHE = [
   "/",
   "/index.html",
@@ -24,6 +24,8 @@ var PRECACHE = [
   "/icons/icon-512.png",
   "/icons/icon-maskable-512.png",
   "/404.html",
+  "/books/pathiyum-muzhumaiyum/",
+  "/books/pathiyum-muzhumaiyum/index.html",
   "/books/uppu-petti/",
   "/books/uppu-petti/index.html",
   "/books/adiyogi/",
