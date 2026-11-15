@@ -273,7 +273,7 @@
       "descEn": "A Tamil translation of Book I (Bones and Cartilages) of Andreas Vesalius’s De humani corporis fabrica (Basel, 1543), the public-domain work that founded modern anatomy on direct dissection, made from the Latin text of the 1543 edition. All forty chapters, with the original woodcuts and Tamil figure legends. A historical text, not medical advice. After every chapter, related couplets from the Tirukkural are given for comparison in a separate box.",
       "cover": "/books/manitha-udalin-amaippu/cover.jpg",
       "page": "/books/manitha-udalin-amaippu/",
-      "watch": false,
+      "watch": true,
       "watchEn": false
     },
     {
