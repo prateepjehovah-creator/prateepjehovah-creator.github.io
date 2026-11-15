@@ -172,6 +172,21 @@
       "watchEn": false
     },
     {
+      "slug": "idhayamum-kuruthiyum",
+      "kind": "public_domain",
+      "titleTa": "இதயமும் குருதியும்",
+      "titleEn": "Idhayamum Kuruthiyum — William Harvey’s On the Motion of the Heart and Blood in the light of the Tirukkural",
+      "year": "1628 (printed, Frankfurt)",
+      "originalAuthor": "William Harvey (வில்லியம் ஹார்வி, 1578–1657)",
+      "translator": "நீலம் பி.ஜே.பிரதீப் ஜேசுதாஸ்",
+      "descTa": "வில்லியம் ஹார்வியின் டி மோட்டு கார்டிஸ் (விலங்குகளில் இதயம், குருதி ஆகியவற்றின் இயக்கம்). 1628-இல் ஃபிராங்க்ஃபர்ட்டில் அச்சிடப்பட்டு, குருதி உடலில் சுற்றி வருவதைச் சோதனைகளால் நிறுவிய பொதுக்கள மருத்துவ நூலின் லத்தீன் மூலத்திலிருந்து தமிழாக்கம். இரண்டு அர்ப்பணிப்புகள், முகவுரை, பதினேழு அத்தியாயங்கள் முழுமையாக; இப்னு அல்-நஃபீஸ் முதல் ஹார்வி வரையிலான வரலாற்று முன்னுரையுடன். ஒவ்வொரு அத்தியாயத்திற்கும் பிறகு, வள்ளுவரின் தொடர்புடைய குறள்கள் ஒப்பிட்டுத் தரப்பட்டுள்ளன.",
+      "descEn": "A Tamil translation of William Harvey’s De Motu Cordis (On the Motion of the Heart and Blood in Animals), printed in Frankfurt in 1628, the public-domain Latin treatise that demonstrated the circulation of the blood by experiment, made from the Latin text. Both dedications, the proem and all seventeen chapters, with a historical introduction from Ibn al-Nafis to Harvey. After every chapter, related couplets from the Tirukkural are given for comparison.",
+      "cover": "/books/idhayamum-kuruthiyum/cover.jpg",
+      "page": "/books/idhayamum-kuruthiyum/",
+      "watch": true,
+      "watchEn": false
+    },
+    {
       "slug": "jathikkummi",
       "kind": "public_domain",
       "titleTa": "ஜாதிக்கும்மி",
