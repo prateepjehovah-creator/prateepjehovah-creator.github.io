@@ -1,0 +1,14 @@
+/* About the Translator / About the Author section, shared by every book page. */
+.about-note .an-head { text-align: center; margin: 0 0 1.25rem; }
+.about-note .an-kicker { font-family: var(--sans); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--link); margin: 0; }
+.about-note h2.an-title { margin: .25rem 0 .9rem; color: var(--link); }
+.about-note .an-photo { width: 11rem; height: 11rem; margin: 0 auto .9rem; border-radius: 50%; border: 3px solid var(--link); padding: 4px; background: var(--salt); }
+.about-note .an-photo img { width: 100%; height: 100%; border-radius: 50%; display: block; object-fit: cover; }
+.about-note .an-name { font-family: var(--serif); font-weight: 700; font-size: 1.15rem; color: var(--link); margin: 0 0 .2rem; }
+.about-note .an-roles, .about-note .an-journal { font-size: .9rem; color: var(--ink-soft); margin: .15rem 0; }
+.about-note .an-dot { display: inline-block; width: .6em; height: .6em; border-radius: 50%; background: var(--link); margin-right: .35em; vertical-align: .05em; }
+.about-note h3 { font-family: var(--serif); color: var(--link); font-size: 1.05rem; margin: 1.4rem 0 .5rem; padding-left: .6rem; border-left: 3px solid var(--link); }
+.about-note p { line-height: 1.85; margin: 0 0 .8rem; }
+.about-note .an-contact { margin-top: 1.4rem; border: 1px solid var(--line); border-left: 4px solid var(--link); border-radius: .5rem; padding: .8rem 1rem; font-size: .92rem; line-height: 1.7; }
+.about-note .an-contact strong { color: var(--link); }
+.reader-about { text-align: center; margin: .5rem 0 0; font-size: .95rem; }

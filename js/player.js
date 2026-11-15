@@ -784,6 +784,15 @@
           credit.innerHTML = '<span lang="ta"></span>';
           credit.querySelector("span").textContent = own;
         }
+        var aboutLink = document.getElementById("reader-about");
+        if (aboutLink) {
+          /* Every book page carries an About the Translator / About the Author section. */
+          var translated = meta.kind === "public_domain";
+          aboutLink.href = "/books/" + slug + "/#about-note";
+          aboutLink.querySelector(".only-ta").textContent = translated ? "மொழிபெயர்ப்பாளரைப் பற்றி →" : "ஆசிரியரைப் பற்றி →";
+          aboutLink.querySelector(".only-en").textContent = translated ? "About the Translator →" : "About the Author →";
+          aboutLink.hidden = false;
+        }
         var toc = document.getElementById("reader-toc");
         data.sections.forEach(function (section) {
           var a = document.createElement("a");
